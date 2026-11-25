@@ -1,0 +1,40 @@
+{
+  "project": "日本安威川大坝",
+  "source": "用户上传的四宫格；日期取自原图，精度为月份。",
+  "stage_source": "后期填筑完成标签依据此前查得的施工单位2022年1月26日填筑完成记录；未在本次独立核实。其他月份不编造阶段或进度真值。",
+  "camera": "近似定点，画幅和朝向存在差异，未证明严格同机位。",
+  "records": [
+    {
+      "month": "2019-06",
+      "image": "images/2019-06.png",
+      "original_crop": "original_crops/2019-06.png",
+      "dam_fill_percent": null,
+      "stage_label": null,
+      "visual_observation": "现场土石方及混凝土结构施工"
+    },
+    {
+      "month": "2020-04",
+      "image": "images/2020-04.png",
+      "original_crop": "original_crops/2020-04.png",
+      "dam_fill_percent": null,
+      "stage_label": null,
+      "visual_observation": "现场土石方及混凝土结构施工继续"
+    },
+    {
+      "month": "2021-01",
+      "image": "images/2021-01.png",
+      "original_crop": "original_crops/2021-01.png",
+      "dam_fill_percent": null,
+      "stage_label": null,
+      "visual_observation": "可见坝体填筑和附属结构施工"
+    },
+    {
+      "month": "2022-02",
+      "image": "images/2022-02.png",
+      "original_crop": "original_crops/2022-02.png",
+      "dam_fill_percent": 100,
+      "stage_label": "坝体填筑完成（仅坝体填筑）",
+      "visual_observation": "可见成型坝面，附属结构仍在施工"
+    }
+  ]
+}

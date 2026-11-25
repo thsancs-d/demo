@@ -48,47 +48,60 @@ STAGES: list[dict] = [
 ]
 
 
-def total_weight() -> int:
-    return sum(s["weight"] for s in STAGES)
+from reservoir_stages import RESERVOIR_STAGES
+
+PROFILES = {"building": STAGES, "reservoir": RESERVOIR_STAGES}
 
 
-def compute_progress(vlm_stages: list[dict]) -> dict:
-    """
-    把模型给出的工序状态折算成加权进度。
-    模型只负责"判断有没有看到"，算术由代码做——不让模型直接报百分比。
+def get_stages(project_type="building"):
+    return PROFILES[project_type]
 
-    同时给出两个数，避免"分母变了进度就跳"的错觉：
-      progress_pct   — 只在可分判断的工序里算（乐观口径，回答"做的部分做到了几成"）
-      progress_floor — 分母用全部权重，看不清按 0 计（保守口径，回答"整体至少完成了几成"）
-    """
-    by_id = {s["id"]: s for s in STAGES}
-    counted = 0.0
-    total_w = 0.0
-    all_w = 0.0
+
+def total_weight(project_type="building"):
+    return sum(s["weight"] for s in get_stages(project_type))
+
+
+def normalize_stages(items, project_type="building"):
+    """未知、缺失、重复冲突、无证据的状态统一降为 unclear。"""
+    if not isinstance(items, list):
+        raise ValueError("stages 必须是数组")
+    grouped = {}
+    for item in items:
+        if isinstance(item, dict) and isinstance(item.get("id"), str):
+            grouped.setdefault(item["id"], []).append(item)
+    result = []
+    for cfg in get_stages(project_type):
+        sid = cfg["id"]
+        entries = grouped.get(sid, [])
+        item = entries[0] if len(entries) == 1 else {}
+        status = item.get("status", "unclear")
+        evidence = item.get("evidence", "")
+        confidence = item.get("confidence")
+        if not isinstance(status, str) or status not in (*STATUS_FACTOR, "unclear") or not isinstance(evidence, str) or not evidence.strip():
+            status = "unclear"
+            evidence = "缺少有效可见证据，或工序缺失/重复"
+        if status == "not_started" and cfg["visibility"] != "exterior":
+            status = "unclear"
+        if isinstance(confidence, bool) or not isinstance(confidence, (int, float)) or not 0 <= confidence <= 1:
+            confidence = None
+        result.append(dict(id=sid, status=status, evidence=evidence, confidence=confidence))
+    return result
+
+
+def compute_progress(vlm_stages, project_type="building"):
+    """工序状态评分，不是实测工程完成率或数学意义的下限。"""
+    counted = total_w = 0.0
     detail = []
-    for item in vlm_stages:
-        sid = item.get("id")
-        cfg = by_id.get(sid)
-        if not cfg:
-            continue
-        status = str(item.get("status", "unclear")).lower()
-        factor = STATUS_FACTOR.get(status)
-        all_w += cfg["weight"]
-        if factor is None:
-            detail.append({**item, "name": cfg["name"], "weight": cfg["weight"],
-                           "visibility": cfg["visibility"], "counted": False})
-            continue
-        counted += cfg["weight"] * factor
-        total_w += cfg["weight"]
+    for item, cfg in zip(normalize_stages(vlm_stages, project_type), get_stages(project_type)):
+        factor = STATUS_FACTOR.get(item["status"])
+        if factor is not None:
+            counted += cfg["weight"] * factor
+            total_w += cfg["weight"]
         detail.append({**item, "name": cfg["name"], "weight": cfg["weight"],
-                       "visibility": cfg["visibility"], "factor": factor,
-                       "counted": True})
-
-    tw = total_weight()
-    return {
-        "progress_pct": round(counted / total_w * 100.0, 1) if total_w else 0.0,
-        "progress_floor": round(counted / tw * 100.0, 1) if tw else 0.0,
-        "counted_weight": round(total_w, 1),
-        "total_weight": tw,
-        "stages": detail,
-    }
+                       "visibility": cfg["visibility"], "counted": factor is not None,
+                       "factor": factor})
+    tw = total_weight(project_type)
+    return {"progress_pct": round(counted / total_w * 100, 1) if total_w else None,
+            "progress_floor": round(counted / tw * 100, 1) if tw else None,
+            "counted_weight": total_w, "total_weight": tw,
+            "metric_type": "visual_stage_score", "stages": detail}

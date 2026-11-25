@@ -99,6 +99,8 @@ def _parse_roi(roi: str | None, w: int, h: int) -> tuple[int, int, int, int] | N
     if len(vals) != 4:
         raise ValueError("--roi 需要 4 个用逗号分隔的比例值：x,y,w,h")
     x, y, rw, rh = vals
+    if not all(np.isfinite(vals)) or min(x, y) < 0 or min(rw, rh) <= 0 or x + rw > 1.0000001 or y + rh > 1.0000001:
+        raise ValueError("ROI 必须为图内非空矩形")
     return (int(x * w), int(y * h), int(rw * w), int(rh * h))
 
 
@@ -126,7 +128,8 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
                    min_area_ratio: float = 0.0015, grid_cell: int = 96,
                    cell_thresh: float = 0.25, ssim_win: int = 0,
                    roi: str | None = None, detect_new_edges: bool = False,
-                   tag: str = "") -> dict[str, Any]:
+                   tag: str = "", registration: str = "legacy",
+                   control_points: str | None = None) -> dict[str, Any]:
     os.makedirs(out_dir, exist_ok=True)
     prefix = f"{tag}_" if tag else ""
 
@@ -135,8 +138,14 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
     ref_g = cv2.cvtColor(ref, cv2.COLOR_RGB2GRAY)
     mov_g = cv2.cvtColor(mov, cv2.COLOR_RGB2GRAY)
 
-    H, inl, kp_r, kp_m, raw, kept, inlier_ratio = _align(
-        ref_g, mov_g, nfeatures, keep_ratio, ransac_thresh)
+    registration_info = None
+    if registration == "auto" or control_points:
+        from registration import register, manual_register
+        args = manual_register(control_points, ref_g, mov_g, ransac_thresh) if control_points else register(ref_g, mov_g, nfeatures, ransac_thresh)
+        H, inl, kp_r, kp_m, raw, kept, inlier_ratio, registration_info = args
+    else:
+        H, inl, kp_r, kp_m, raw, kept, inlier_ratio = _align(
+            ref_g, mov_g, nfeatures, keep_ratio, ransac_thresh)
     if H is None or not np.isfinite(H).all():
         raise RuntimeError("特征匹配失败：两图可能没有共视区域，或拍摄角度差异过大。")
 
@@ -149,13 +158,18 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
             f"重叠区域仅 {overlap_ratio:.1%}，对齐不可信，请确认两张是同一建筑同一视角。")
 
     aligned_g = cv2.warpPerspective(mov_g, H, (w, h))
-    aligned_g = match_histograms(aligned_g, ref_g, channel_axis=None).astype(np.uint8)
+    if registration_info is not None:
+        # Estimate the intensity mapping only from overlapping pixels.
+        inside = valid > 0
+        aligned_g[inside] = match_histograms(aligned_g[inside], ref_g[inside], channel_axis=None).astype(np.uint8)
+    else:
+        aligned_g = match_histograms(aligned_g, ref_g, channel_axis=None).astype(np.uint8)
 
     win = _odd(ssim_win or int(0.0017 * max(w, mov.shape[1]) + 13.7))
     a_blur = cv2.blur(ref_g, (win, win))
     b_blur = cv2.blur(aligned_g, (win, win))
     mean_ssim, full = ssim(a_blur, b_blur, full=True, data_range=255)
-    ssim_img = (full * 255).astype(np.uint8)
+    ssim_img = (np.clip(full, 0, 1) * 255).astype(np.uint8)
 
     # ---- 计算区域：默认全图，可用 ROI 收窄 ----
     box = _parse_roi(roi, w, h)
@@ -165,6 +179,10 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
         area_mask[ry:ry + rh2, rx:rx + rw2] = 255
     else:
         area_mask = np.full((h, w), 255, np.uint8)
+    if registration_info is not None:
+        # Exclude pixels whose SSIM/blur windows cross warp padding.
+        radius = win // 2 + 3
+        valid = cv2.erode(valid, np.ones((2*radius+1,2*radius+1),np.uint8), borderType=cv2.BORDER_CONSTANT, borderValue=0)
     calc = cv2.bitwise_and(valid, area_mask)
     if (calc > 0).sum() < 1000:
         raise RuntimeError("ROI 内有效重叠像素过少，请调整 --roi。")
@@ -177,6 +195,7 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
     dissim = cv2.morphologyEx(dissim, cv2.MORPH_OPEN,
                               cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3)))
 
+    dissim = cv2.bitwise_and(dissim, calc)
     overlap_area = float(valid_px.sum())
     regions = _regions_from_mask(dissim, scores, max(120.0, overlap_area * min_area_ratio))
     mean_ssim_calc = float(np.mean(ssim_img[valid_px])) / 255.0
@@ -213,6 +232,7 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
         novel = cv2.bitwise_and(e2, cv2.bitwise_not(e1d))
         novel = cv2.bitwise_and(novel, calc)
         novel = cv2.morphologyEx(novel, cv2.MORPH_CLOSE, np.ones((9, 9), np.uint8))
+        novel = cv2.bitwise_and(novel, calc)
         new_edge_ratio = float((novel > 0).sum()) / overlap_area
         novel_regions = _regions_from_mask(
             novel, np.full_like(ssim_img, 255), max(400.0, overlap_area * 0.002))
@@ -227,7 +247,7 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
         x, y, bw, bh = r["bbox"]
         cv2.rectangle(outlined, (x, y), (x + bw, y + bh), (255, 0, 0), 3)
 
-    heat = cv2.cvtColor(cv2.applyColorMap(ssim_img, cv2.COLORMAP_JET), cv2.COLOR_BGR2RGB)
+    heat = cv2.cvtColor(cv2.applyColorMap(255 - ssim_img, cv2.COLORMAP_JET), cv2.COLOR_BGR2RGB)
     heat[calc == 0] = 0
     mask_rgb = cv2.cvtColor(calc, cv2.COLOR_GRAY2RGB)
     if box:
@@ -276,6 +296,8 @@ def compare_photos(before_path: str, after_path: str, out_dir: str,
         "new_structure_regions": novel_regions[:20],
         "outputs": paths,
     }
+    if registration_info is not None:
+        result["registration"] = registration_info
     with open(os.path.join(out_dir, f"{prefix}result.json"), "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
     return result

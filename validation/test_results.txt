@@ -1,0 +1,20 @@
+test_cv_and_cli (test_integration.TestIntegration.test_cv_and_cli) ... ok
+test_hidden (test_integration.TestIntegration.test_hidden) ... ok
+test_missing_and_duplicates (test_integration.TestIntegration.test_missing_and_duplicates) ... ok
+test_profiles (test_integration.TestIntegration.test_profiles) ... ok
+test_prompt (test_integration.TestIntegration.test_prompt) ... ok
+test_quantities (test_integration.TestIntegration.test_quantities) ... ok
+test_report (test_integration.TestIntegration.test_report) ... ok
+test_roi (test_integration.TestIntegration.test_roi) ... ok
+test_score (test_integration.TestIntegration.test_score) ... ok
+test_summarize (test_integration.TestIntegration.test_summarize) ... ok
+test_affine_and_change (test_registration.TestRegistration.test_affine_and_change) ... ok
+test_degenerate_rejected (test_registration.TestRegistration.test_degenerate_rejected) ... ok
+test_manual_independent_check (test_registration.TestRegistration.test_manual_independent_check) ... ok
+test_real_pair_safe_fallback (test_registration.TestRegistration.test_real_pair_safe_fallback) ... ok
+test_unrelated_rejected (test_registration.TestRegistration.test_unrelated_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 4.547s
+
+OK
