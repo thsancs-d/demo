@@ -1,0 +1,93 @@
+{
+  "prompt_version": "v9-fixed-camera-temporal",
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "74de27513dca11728d683281758ca245d8779003882f00491dab40858eb43cae",
+  "images": [
+    {
+      "image_number": 1,
+      "role": "baseline_and_previous",
+      "date": "2020-04",
+      "label": "图1：永久基准兼上一期照片 2020-04",
+      "file": "observations/2020-04/original.jpg",
+      "sha256": "594663554bf02547579627289e88e8ff43f47a5e214822d5a14888460749b422",
+      "encoded_sha256": "063337708f6767c3edfaa23a5d2b8086009360a5669c3269a899fa8654dec457"
+    },
+    {
+      "image_number": 2,
+      "role": "current",
+      "date": "2020-07",
+      "label": "图2：本期新增现场照片 2020-07",
+      "file": "observations/2020-07/original.jpg",
+      "sha256": "e2ba81c20479938c9708dc777c51dd5040c37be0ec0d082bc39a0ebe7d8cf491",
+      "encoded_sha256": "c622818038703300b84fd5f191cc83737b27b70c460ca64ab332a8a2ae84f4ae"
+    }
+  ],
+  "history_context": {
+    "baseline_date": "2020-04",
+    "previous_date": "2020-04",
+    "history": [
+      {
+        "date": "2020-04",
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          },
+          {
+            "id": "dam_foundation",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          },
+          {
+            "id": "diversion",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          },
+          {
+            "id": "dam_body",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          },
+          {
+            "id": "spillway",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          },
+          {
+            "id": "intake_outlet",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          },
+          {
+            "id": "electromechanical",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          },
+          {
+            "id": "ancillary",
+            "status": "unclear",
+            "evidence": "缺少有效可见证据，或工序缺失/重复",
+            "observed_date": null,
+            "source": "unknown"
+          }
+        ]
+      }
+    ]
+  },
+  "execution_mode": "offline_test"
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>工程监测台 · 施工进度影像核验</title>
+  <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-group">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>工程监测台</span>
+        </a>
+        <span class="brand-sep" aria-hidden="true"></span>
+        <span class="brand-sub">施工进度影像核验</span>
+      </div>
+      <div class="top-actions">
+        <span class="status-chip"><i class="live-indicator" aria-hidden="true"></i>本地监测台</span>
+        <button id="openUpload" class="button primary small" type="button">＋ 上传现场照片</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-banner" aria-label="工程概览">
+        <div class="banner-main">
+          <div class="banner-title-row">
+            <h1 id="projectTitle">当前工程</h1>
+            <span id="sourceBadge" class="badge historical">历史分析</span>
+          </div>
+          <div class="project-meta-inline">
+            <div class="meta-item"><span>工程名称</span><strong id="metaProject">读取中</strong></div>
+            <div class="meta-item"><span>工程类型</span><strong id="metaType">读取中</strong></div>
+            <div class="meta-item"><span>监测时段</span><strong id="dateRange">读取中</strong></div>
+          </div>
+        </div>
+        <div class="metric-strip" aria-label="关键指标">
+          <div class="metric-card"><span>当前期次</span><strong id="metricPeriod">—</strong></div>
+          <div class="metric-card accent"><span>工程百分比（估算）</span><strong id="metricProgress">—</strong></div>
+          <div class="metric-card"><span>状态覆盖率</span><strong id="metricCoverage">—</strong></div>
+          <div class="metric-card"><span>部位状态</span><strong id="metricStatus">—</strong></div>
+        </div>
+      </section>
+
+      <div id="notice" class="notice hidden" role="status"></div>
+
+      <section class="workspace-bar" aria-label="期次与趋势">
+        <div class="timeline-block">
+          <div class="block-head">
+            <h2>监测期次</h2>
+            <span class="muted">切换期次查看对应现场影像与分项判读</span>
+          </div>
+          <div id="timeline" class="timeline"></div>
+        </div>
+        <div class="trend-block">
+          <div class="block-head">
+            <h2>期次趋势</h2>
+            <span class="muted">估算进度</span>
+          </div>
+          <div id="trend" class="trend-chart"></div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="content-column">
+          <div id="comparison" class="comparison-card"></div>
+          <section class="parts-section">
+            <div class="section-heading">
+              <div>
+                <h2>工程部位建设情况</h2>
+                <p class="section-sub">点击部位卡片可在上方现场照片中定位并高亮对应证据区域</p>
+              </div>
+              <span id="stageCount" class="muted"></span>
+            </div>
+            <div id="stages" class="stage-list"></div>
+          </section>
+        </div>
+
+        <aside class="right-rail">
+          <div class="rail-panel">
+            <div class="panel-head">
+              <h3>本期判读总览</h3>
+              <span class="muted">视觉估算</span>
+            </div>
+            <div id="summary"></div>
+          </div>
+
+          <div class="rail-panel rail-legend">
+            <div class="panel-head">
+              <h3>图层与图例</h3>
+              <button id="toggleBoxes" class="button ghost tiny" type="button" aria-pressed="true">隐藏框线</button>
+            </div>
+            <div class="legend-grid">
+              <p><i class="legend-box green"></i>部位识别区域</p>
+              <p><i class="legend-box orange"></i>时序变化区域</p>
+              <p><i class="legend-dot amber"></i>施工中</p>
+              <p><i class="legend-dot done"></i>已完成</p>
+              <p><i class="legend-dot gray"></i>无法确认</p>
+            </div>
+          </div>
+
+          <div class="rail-panel">
+            <div class="panel-head">
+              <h3>识别任务</h3>
+              <button id="refreshJobs" class="button ghost tiny" type="button">刷新</button>
+            </div>
+            <div id="jobs" class="jobs-list"><div class="empty">暂无上传任务</div></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <span>工程施工进度监测系统</span>
+      <span>原始照片 / 视觉证据 / 分项估算</span>
+    </footer>
+  </div>
+
+  <dialog id="uploadDialog" class="upload-dialog">
+    <form id="uploadForm" method="dialog">
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">NEW OBSERVATION</p>
+          <h2>新增现场照片</h2>
+        </div>
+        <button type="button" id="closeUpload" class="close" aria-label="关闭">×</button>
+      </div>
+      <p class="dialog-copy">上传同一工程的 2–8 张不同日期照片，系统按日期建立监测时间线。</p>
+      <div class="field-row">
+        <label class="field"><span>工程名称</span><input name="project_name" value="我的工程" maxlength="80" required></label>
+        <label class="field"><span>坝型 / 工程类型</span><input name="dam_type" value="岩石填筑坝" maxlength="100" required></label>
+      </div>
+      <label class="dropzone" id="dropzone">
+        <input id="photos" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple required>
+        <b>选择照片或拖入此处</b>
+        <small>JPG / PNG / WebP · 单张不超过 12 MB</small>
+      </label>
+      <div id="photoRows" class="photo-rows"></div>
+      <div id="formError" class="form-error hidden"></div>
+      <div class="dialog-actions">
+        <button type="button" id="cancelUpload" class="button ghost">取消</button>
+        <button type="submit" id="submitUpload" class="button primary">开始识别</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

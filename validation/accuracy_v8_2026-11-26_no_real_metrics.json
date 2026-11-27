@@ -1,0 +1,20 @@
+{
+  "metric": "visual_completion_pct",
+  "tolerance_pp": 10,
+  "eligible_labels": 0,
+  "excluded_labels": 0,
+  "predictions": 0,
+  "abstentions": 0,
+  "prediction_coverage_pct": null,
+  "mae_pp": null,
+  "bias_pp": null,
+  "within_tolerance_pct": null,
+  "interval_coverage_pct": null,
+  "mean_interval_width_pp": null,
+  "comparisons": [],
+  "notes": [
+    "误差与阈值内比例仅针对已给出预测的样本，须同时查看预测覆盖率。",
+    "标签来源及分项口径由标注者核验；本程序不验证来源真实性。",
+    "仅评价线上识别历史；模拟、回放或未标明模式的数据不计成绩。"
+  ]
+}

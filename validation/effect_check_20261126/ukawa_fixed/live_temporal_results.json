@@ -1,0 +1,207 @@
+{
+  "version": "v9-fixed-camera-temporal",
+  "dataset": "Niigata Prefecture Ukawa Dam fixed-view photo sequence",
+  "model": "deepseek-v4-flash",
+  "execution_mode": "live",
+  "output": "/Users/yue/文件夹111/demo-main/output/ukawa_fixed_temporal_live_20261126",
+  "periods": [
+    {
+      "date": "2020-04",
+      "temporal_review": {
+        "policy": "v9-fixed-camera-temporal",
+        "accepted_changes": 0,
+        "rejected_changes": 0,
+        "reasons": [
+          "首期没有上一期图像"
+        ]
+      },
+      "temporal_changes": [],
+      "project_progress_pct": null,
+      "coverage_pct": 0.0,
+      "range_pct": [
+        0.0,
+        100.0
+      ],
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "unclear",
+          "confidence": 0.78,
+          "progress_estimate": null
+        },
+        {
+          "id": "dam_foundation",
+          "status": "unclear",
+          "confidence": 0.7,
+          "progress_estimate": null
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.35,
+          "progress_estimate": null
+        },
+        {
+          "id": "dam_body",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null
+        },
+        {
+          "id": "spillway",
+          "status": "unclear",
+          "confidence": 0.72,
+          "progress_estimate": null
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.25,
+          "progress_estimate": null
+        },
+        {
+          "id": "ancillary",
+          "status": "unclear",
+          "confidence": 0.7,
+          "progress_estimate": null
+        }
+      ]
+    },
+    {
+      "date": "2020-07",
+      "temporal_review": {
+        "policy": "v9-fixed-camera-temporal",
+        "accepted_changes": 3,
+        "rejected_changes": 0,
+        "reasons": []
+      },
+      "temporal_changes": [
+        {
+          "stage_id": "dam_body",
+          "direction": "advanced",
+          "change_type": "expanded",
+          "evidence_image_numbers": [
+            1,
+            2
+          ],
+          "bbox_xyxy": [
+            0.31,
+            0.47,
+            0.62,
+            0.72
+          ],
+          "where": "中央谷底、混凝土槽左侧的填筑区域",
+          "what": "可见灰色土石填筑面较2020-04扩大并向上游延伸，形成连续填筑平台；仅判断可见填筑面变化，不估算体积。",
+          "confidence": 0.78,
+          "visibility": "partial",
+          "basis": "same_region_comparison"
+        },
+        {
+          "stage_id": "spillway",
+          "direction": "advanced",
+          "change_type": "expanded",
+          "evidence_image_numbers": [
+            1,
+            2
+          ],
+          "bbox_xyxy": [
+            0.52,
+            0.5,
+            0.7,
+            0.82
+          ],
+          "where": "画面中部至右下的混凝土槽和挡墙",
+          "what": "右侧混凝土槽壁和成型面较上期有可见延伸或增加；不能判断整体完成或验收。",
+          "confidence": 0.72,
+          "visibility": "partial",
+          "basis": "same_region_comparison"
+        },
+        {
+          "stage_id": "preparation",
+          "direction": "advanced",
+          "change_type": "temporary_change",
+          "evidence_image_numbers": [
+            1,
+            2
+          ],
+          "bbox_xyxy": [
+            0.68,
+            0.78,
+            0.9,
+            0.96
+          ],
+          "where": "右下角场地及临时设施区",
+          "what": "临时集装箱、车辆和场地设施数量增加，属临建或临时变化，不代表施工准备全部完成。",
+          "confidence": 0.74,
+          "visibility": "clear",
+          "basis": "same_region_comparison"
+        }
+      ],
+      "project_progress_pct": null,
+      "coverage_pct": 0.0,
+      "range_pct": [
+        0.0,
+        100.0
+      ],
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "unclear",
+          "confidence": 0.82,
+          "progress_estimate": null
+        },
+        {
+          "id": "dam_foundation",
+          "status": "unclear",
+          "confidence": 0.75,
+          "progress_estimate": null
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.45,
+          "progress_estimate": null
+        },
+        {
+          "id": "dam_body",
+          "status": "unclear",
+          "confidence": 0.86,
+          "progress_estimate": null
+        },
+        {
+          "id": "spillway",
+          "status": "unclear",
+          "confidence": 0.78,
+          "progress_estimate": null
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.4,
+          "progress_estimate": null
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.35,
+          "progress_estimate": null
+        },
+        {
+          "id": "ancillary",
+          "status": "unclear",
+          "confidence": 0.62,
+          "progress_estimate": null
+        }
+      ]
+    }
+  ],
+  "status": "completed",
+  "elapsed_seconds": 124.788,
+  "accuracy_validation": "not_measurable_without_event_ground_truth"
+}

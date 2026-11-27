@@ -1,0 +1,138 @@
+{
+  "stages": [
+    {
+      "id": "preparation",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    },
+    {
+      "id": "dam_foundation",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    },
+    {
+      "id": "diversion",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    },
+    {
+      "id": "dam_body",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    },
+    {
+      "id": "spillway",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    },
+    {
+      "id": "intake_outlet",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    },
+    {
+      "id": "electromechanical",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    },
+    {
+      "id": "ancillary",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false
+    }
+  ],
+  "inferred_stages": [],
+  "changes": [],
+  "risks": [
+    "离线模拟数据；所有百分比为人工测试输入。"
+  ],
+  "summary": "2021-01 离线模拟响应，非实际识别。"
+}

@@ -1,0 +1,11 @@
+.venv/
+.env
+output/
+__pycache__/
+*.pyc
+
+# 参考实现（GPL-3.0，且含 88MB 样本照片），按需自行 clone：
+# git clone https://github.com/terrsoshi/construction-progress-monitoring-image-processing.git
+baseline-terrsoshi/
+
+.DS_Store

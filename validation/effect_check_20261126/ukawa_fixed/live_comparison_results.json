@@ -1,0 +1,224 @@
+{
+  "test_type": "live-model fixed-view evaluation with stage/coverage comparison; no verified numeric labels",
+  "leakage_control": "Prompts used neutral project context (name/type/visibility constraints only). Date-specific official progress text was kept out of context/prompts; prompts were audited after both runs. Earlier exploratory runs that contained dated facts in context are excluded from every result here.",
+  "dataset": {
+    "project": "Niigata Prefecture Ukawa Dam",
+    "view": "official 定点写真, downstream aerial site overview",
+    "dates": [
+      "2020-04",
+      "2020-07"
+    ],
+    "image_sizes_px": [
+      [
+        640,
+        360
+      ],
+      [
+        640,
+        479
+      ]
+    ],
+    "model": "deepseek-v4-flash",
+    "thinking": "default, --fast not used",
+    "runs": 4,
+    "cv_pair_accepted": false,
+    "ssim_diff_sent": false,
+    "sources": [
+      {
+        "date": "2020-04",
+        "file": "data/before.jpg",
+        "sha256": "594663554bf02547579627289e88e8ff43f47a5e214822d5a14888460749b422",
+        "url": "https://www.pref.niigata.lg.jp/site/kashiwazaki-seibi/r-2-4kouzinoyousu.html",
+        "caption": "定点写真：下流上空よりダムサイトを望む"
+      },
+      {
+        "date": "2020-07",
+        "file": "data/after.jpg",
+        "sha256": "e2ba81c20479938c9708dc777c51dd5040c37be0ec0d082bc39a0ebe7d8cf491",
+        "url": "https://www.pref.niigata.lg.jp/site/kashiwazaki-seibi/r-2-7kouzinoyousu.html",
+        "caption": "定点写真：下流側上空からダムサイトを望む"
+      }
+    ]
+  },
+  "versions": {
+    "v7": {
+      "direct_estimates_total": 8,
+      "direct_estimate_rate_pct": 50.0,
+      "mean_direct_weight_coverage_pct": 35.0,
+      "dates": [
+        {
+          "date": "2020-04",
+          "estimated_project_progress_pct": null,
+          "aggregation_method": "insufficient_evidence",
+          "current_weight_coverage_pct": 35.0,
+          "total_possible_range_pct": [
+            11.25,
+            86.75
+          ],
+          "direct_estimates": 4,
+          "direct_estimate_slots": 8,
+          "raw_model_numeric_candidates": 4,
+          "low_confidence_direct_estimates_below_0_7": 3,
+          "direct_estimate_stages": [
+            {
+              "id": "preparation",
+              "percent": 70,
+              "range_pct": [
+                55,
+                85
+              ],
+              "confidence": 0.7
+            },
+            {
+              "id": "dam_foundation",
+              "percent": 40,
+              "range_pct": [
+                25,
+                55
+              ],
+              "confidence": 0.5
+            },
+            {
+              "id": "spillway",
+              "percent": 50,
+              "range_pct": [
+                35,
+                65
+              ],
+              "confidence": 0.6
+            },
+            {
+              "id": "ancillary",
+              "percent": 30,
+              "range_pct": [
+                15,
+                45
+              ],
+              "confidence": 0.55
+            }
+          ],
+          "dam_body_status": "unclear",
+          "dam_body_percent": null,
+          "dam_body_confidence": 0.45,
+          "cv_diff_eligible": false,
+          "summary": "2020-04航拍显示工程处于坝基/岸坡开挖处理和溢洪道泄槽混凝土施工阶段；施工道路、平台及临建已形成，取放水、机电和大坝填筑本体缺乏可核实证据。首期无历史差分，不输出总进度。"
+        },
+        {
+          "date": "2020-07",
+          "estimated_project_progress_pct": null,
+          "aggregation_method": "insufficient_evidence",
+          "current_weight_coverage_pct": 35.0,
+          "total_possible_range_pct": [
+            12.25,
+            88.0
+          ],
+          "direct_estimates": 4,
+          "direct_estimate_slots": 8,
+          "raw_model_numeric_candidates": 4,
+          "low_confidence_direct_estimates_below_0_7": 4,
+          "direct_estimate_stages": [
+            {
+              "id": "preparation",
+              "percent": 68,
+              "range_pct": [
+                50,
+                85
+              ],
+              "confidence": 0.5
+            },
+            {
+              "id": "dam_foundation",
+              "percent": 45,
+              "range_pct": [
+                30,
+                60
+              ],
+              "confidence": 0.45
+            },
+            {
+              "id": "spillway",
+              "percent": 55,
+              "range_pct": [
+                40,
+                70
+              ],
+              "confidence": 0.5
+            },
+            {
+              "id": "ancillary",
+              "percent": 30,
+              "range_pct": [
+                15,
+                45
+              ],
+              "confidence": 0.4
+            }
+          ],
+          "dam_body_status": "unclear",
+          "dam_body_percent": null,
+          "dam_body_confidence": 0.3,
+          "cv_diff_eligible": false,
+          "summary": "本期（2020-07）现场显示：施工便道网与中央、右侧平台继续使用并新增临建和料堆；河床清基平整处理面较基准扩大；右侧溢洪道泄槽衬砌段延伸并出现养护覆盖和模板作业面；坝脚右下出现较完整设施群但归属不明。堆石坝填筑断面、围堰导流、取水塔与放水洞口、闸门启闭机均无法从外观确认，相应分项不给完成百分比。仅施工准备、坝基处理、溢洪道、附属四项有本期直接可见证据并给出宽范围估算，其余保持未知，不输出总进度。"
+        }
+      ]
+    },
+    "v8": {
+      "direct_estimates_total": 0,
+      "direct_estimate_rate_pct": 0.0,
+      "mean_direct_weight_coverage_pct": 0.0,
+      "dates": [
+        {
+          "date": "2020-04",
+          "estimated_project_progress_pct": null,
+          "aggregation_method": "insufficient_evidence",
+          "current_weight_coverage_pct": 0.0,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "direct_estimates": 0,
+          "direct_estimate_slots": 8,
+          "raw_model_numeric_candidates": 0,
+          "low_confidence_direct_estimates_below_0_7": 0,
+          "direct_estimate_stages": [],
+          "dam_body_status": "unclear",
+          "dam_body_percent": null,
+          "dam_body_confidence": 0.4,
+          "cv_diff_eligible": false,
+          "summary": "本期为2020-04首期基准航拍。可清楚辨认的是中部偏右一条带状混凝土泄槽（含模板或边墙分段）、左中部的大范围开挖盆地与台阶状边坡、纵横的施工便道与平台、左侧坡面的方格状防护，以及少量临建和机械。堆石坝体本身的填筑层与碾压面未见可确认的证据，取水放流、导流及金属结构不在可见范围内。由于没有设计范围参照，且坝体与泄槽、坝基之间界限需另行确认，各分项均不给出百分比估算。"
+        },
+        {
+          "date": "2020-07",
+          "estimated_project_progress_pct": null,
+          "aggregation_method": "insufficient_evidence",
+          "current_weight_coverage_pct": 0.0,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "direct_estimates": 0,
+          "direct_estimate_slots": 8,
+          "raw_model_numeric_candidates": 0,
+          "low_confidence_direct_estimates_below_0_7": 0,
+          "direct_estimate_stages": [],
+          "dam_body_status": "unclear",
+          "dam_body_percent": null,
+          "dam_body_confidence": 0.4,
+          "cv_diff_eligible": false,
+          "summary": "2020-07原图可见施工便道、中央开挖/整平面、右侧分段混凝土泄槽及场地设施；各分项完整计划边界不可辨，且隐蔽工序无法外观确认，故仅记录可见事实，不给出完成百分比或总工程进度。"
+        }
+      ]
+    }
+  },
+  "official_qualitative_context": {
+    "2020-04": "Prefecture page says the winter protective layer at the riverbed was removed and full-scale embankment would start.",
+    "2020-07": "Prefecture page includes a separate embankment-progress photo and a cross section through July 31.",
+    "used_as_numeric_ground_truth": false
+  },
+  "numeric_accuracy_metrics": {
+    "mae_pp": null,
+    "accuracy_pct": null,
+    "reason": "There are no verified visual-completion percentage labels for this project; official prose/photos are qualitative."
+  },
+  "caveat": "Model knows the project name and observation dates; external prior knowledge may affect outputs. This is not a clean computer-vision-only benchmark."
+}

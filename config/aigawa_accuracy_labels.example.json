@@ -1,0 +1,46 @@
+{
+  "project": "日本安威川大坝",
+  "note": "人工填写并核验后才能计分。不得把模型输出、模拟百分比或未核实的完成节点作为真值。可为其他分项增加记录；date和stage_id组合须唯一。",
+  "records": [
+    {
+      "date": "2019-06",
+      "stage_id": "dam_body",
+      "metric": "visual_completion_pct",
+      "percent": null,
+      "verified": false,
+      "source": "",
+      "scope_basis": "坝体可见填筑范围；须人工确认与识别口径一致",
+      "image_sha256": "eebef99d5fd082cc4d158a684e1f79131b836921c76d11171816511663d5049d"
+    },
+    {
+      "date": "2020-04",
+      "stage_id": "dam_body",
+      "metric": "visual_completion_pct",
+      "percent": null,
+      "verified": false,
+      "source": "",
+      "scope_basis": "坝体可见填筑范围；须人工确认与识别口径一致",
+      "image_sha256": "329c154af4a340d5f429cc727cc916de4c2b493ed21e8b4cedb77e7016875a06"
+    },
+    {
+      "date": "2021-01",
+      "stage_id": "dam_body",
+      "metric": "visual_completion_pct",
+      "percent": null,
+      "verified": false,
+      "source": "",
+      "scope_basis": "坝体可见填筑范围；须人工确认与识别口径一致",
+      "image_sha256": "ae104fd6802a13d05aa06c3bcc997b2ac305e880548c005491266468a7fd6eb5"
+    },
+    {
+      "date": "2022-02",
+      "stage_id": "dam_body",
+      "metric": "visual_completion_pct",
+      "percent": null,
+      "verified": false,
+      "source": "",
+      "scope_basis": "坝体可见填筑范围；须人工确认与识别口径一致",
+      "image_sha256": "09712fa6b665a5f8dfe543e0c1d799c954a83b0328ebba7cfcd215fb0996a32d"
+    }
+  ]
+}

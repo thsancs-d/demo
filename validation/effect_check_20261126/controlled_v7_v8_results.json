@@ -1,0 +1,2935 @@
+{
+  "created_at_utc": "2026-11-26T06:41:56.273367+00:00",
+  "evidence_type": "synthetic_response_not_real_accuracy",
+  "purpose": "验证实际代码的证据筛选、区间汇总和停止外推行为；不评估视觉模型准确率。",
+  "model_api_used": false,
+  "ground_truth_available": false,
+  "accuracy_metric_computed": false,
+  "v7_label_means": "当前代码中保留的V7汇总路径；不是重新运行历史V7视觉模型。",
+  "v8_label_means": "当前代码的V8证据筛选与汇总路径；没有调用视觉模型。",
+  "total_cases": 8,
+  "all_case_assertions_passed": true,
+  "source_sha256": {
+    "src/progress_tracker.py": "b0de760cb302f1e99ebc7f052368ef87981947f4d055e9fc9f7a762fcf5c3958",
+    "src/recognition_quality.py": "3185993fbc07c563ead24b23a246ee96df50e18a28bfd1c6d84925c5b698bb9e",
+    "src/visual_phase.py": "b1e50bde5ed24ae7f4b167be852678859fccc94dfecb3fb97bd0ce6f26ada8d8",
+    "src/stages.py": "74f28497d8b8b3f34681a526d299f7cfb615b36c507d9ac4ce8264aa96c64677"
+  },
+  "stage_weights": [
+    {
+      "id": "preparation",
+      "weight": 5
+    },
+    {
+      "id": "dam_foundation",
+      "weight": 10
+    },
+    {
+      "id": "diversion",
+      "weight": 10
+    },
+    {
+      "id": "dam_body",
+      "weight": 40
+    },
+    {
+      "id": "spillway",
+      "weight": 15
+    },
+    {
+      "id": "intake_outlet",
+      "weight": 10
+    },
+    {
+      "id": "electromechanical",
+      "weight": 5
+    },
+    {
+      "id": "ancillary",
+      "weight": 5
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "valid_all",
+      "description": "全部8项满足证据规则，60%，区间50–70%。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            50.0,
+            70.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项均有本期估算，按固定工程权重汇总。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            50.0,
+            70.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项通过本期证据筛选，按固定示例权重汇总；未验证识别准确率。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 8,
+          "rejected_estimates": 0,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    },
+    {
+      "case_id": "low_confidence_all",
+      "description": "全部8项置信度从0.9降至0.1。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.1,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            50.0,
+            70.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项均有本期估算，按固定工程权重汇总。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 0.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": null,
+          "project_progress_pct": null,
+          "project_progress_method": "insufficient_evidence",
+          "project_progress_basis": "直接证据未覆盖全部分项，仅报告可估算分项及全工程可能区间；不按均值外推未知项。",
+          "assumed_weight_pct": 100.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 0,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 0,
+          "rejected_estimates": 8,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "置信度不足或无效（筛选阈值未标定）"
+              ]
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    },
+    {
+      "case_id": "wrong_image_number_all",
+      "description": "全部8项证据图号为2，本期图号为1。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 2,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            50.0,
+            70.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项均有本期估算，按固定工程权重汇总。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 0.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": null,
+          "project_progress_pct": null,
+          "project_progress_method": "insufficient_evidence",
+          "project_progress_basis": "直接证据未覆盖全部分项，仅报告可估算分项及全工程可能区间；不按均值外推未知项。",
+          "assumed_weight_pct": 100.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 0,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 0,
+          "rejected_estimates": 8,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据图号不是本期原图"
+              ]
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    },
+    {
+      "case_id": "partial_visibility_all",
+      "description": "全部8项可见性改为partial。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "partial",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            50.0,
+            70.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项均有本期估算，按固定工程权重汇总。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 0.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": null,
+          "project_progress_pct": null,
+          "project_progress_method": "insufficient_evidence",
+          "project_progress_basis": "直接证据未覆盖全部分项，仅报告可估算分项及全工程可能区间；不按均值外推未知项。",
+          "assumed_weight_pct": 100.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 0,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 0,
+          "rejected_estimates": 8,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "本期可见证据不清晰或被遮挡"
+              ]
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    },
+    {
+      "case_id": "unknown_scope_all",
+      "description": "全部8项完整计划范围改为unknown。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "unknown",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            50.0,
+            70.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项均有本期估算，按固定工程权重汇总。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 0.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": null,
+          "project_progress_pct": null,
+          "project_progress_method": "insufficient_evidence",
+          "project_progress_basis": "直接证据未覆盖全部分项，仅报告可估算分项及全工程可能区间；不按均值外推未知项。",
+          "assumed_weight_pct": 100.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 0,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 0,
+          "rejected_estimates": 8,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "完整计划范围不可辨认"
+              ]
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    },
+    {
+      "case_id": "invalid_bbox_all",
+      "description": "全部8项证据框宽度为0。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.1,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            50.0,
+            70.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项均有本期估算，按固定工程权重汇总。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 0.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": null,
+          "project_progress_pct": null,
+          "project_progress_method": "insufficient_evidence",
+          "project_progress_basis": "直接证据未覆盖全部分项，仅报告可估算分项及全工程可能区间；不按均值外推未知项。",
+          "assumed_weight_pct": 100.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 0,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 0,
+          "rejected_estimates": 8,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "证据区域缺失、越界或为空"
+              ]
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    },
+    {
+      "case_id": "zero_width_interval_all",
+      "description": "全部8项施工中估算区间改为[60,60]。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                60,
+                60
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": 60.0,
+          "total_possible_range_pct": [
+            60.0,
+            60.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 100.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "all_stage_weighted",
+          "project_progress_basis": "全部分项均有本期估算，按固定工程权重汇总。",
+          "assumed_weight_pct": 0.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 8,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "total_reference_pct": null,
+          "current_coverage_pct": 0.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": null,
+          "project_progress_pct": null,
+          "project_progress_method": "insufficient_evidence",
+          "project_progress_basis": "直接证据未覆盖全部分项，仅报告可估算分项及全工程可能区间；不按均值外推未知项。",
+          "assumed_weight_pct": 100.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 0,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 0,
+          "rejected_estimates": 8,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": false,
+              "had_estimate": true,
+              "reasons": [
+                "施工中影像估算不能使用零宽度区间"
+              ]
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    },
+    {
+      "case_id": "dam_foundation_estimate_missing",
+      "description": "仅将权重10%的坝基分项估算置空，其余7项不变。",
+      "evidence_type": "synthetic_response_not_real_accuracy",
+      "input": {
+        "stages": [
+          {
+            "id": "preparation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_foundation",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": null,
+            "carry_previous": false
+          },
+          {
+            "id": "diversion",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "dam_body",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "spillway",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "intake_outlet",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "electromechanical",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          },
+          {
+            "id": "ancillary",
+            "status": "in_progress",
+            "evidence": "合成输入：本期画面中可定位的完整分项范围。",
+            "confidence": 0.9,
+            "observation": {
+              "image_number": 1,
+              "bbox_xyxy": [
+                0.1,
+                0.2,
+                0.8,
+                0.9
+              ],
+              "visibility": "clear",
+              "scope": "full",
+              "basis": "visible_extent"
+            },
+            "progress_estimate": {
+              "percent": 60,
+              "range_pct": [
+                50,
+                70
+              ],
+              "scope_basis": "合成输入：完整计划边界。",
+              "completed_basis": "合成输入：完成与剩余范围可估算。"
+            },
+            "carry_previous": false
+          }
+        ],
+        "inferred_stages": [],
+        "changes": [],
+        "risks": [],
+        "summary": "受控合成响应，仅验证规则行为，不代表真实影像识别准确率。"
+      },
+      "v7": {
+        "function_path": "current_rows(raw, None, date) -> estimate_breakdown(rows, [])",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            45.0,
+            73.0
+          ],
+          "total_reference_pct": 59.0,
+          "current_coverage_pct": 90.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": 60.0,
+          "project_progress_method": "coverage_extrapolation",
+          "project_progress_basis": "按固定工程权重逐项汇总本期可见估算及有依据的推断；不采用模型独立给出的总数。；其余分项（坝基开挖及处理）按本期可见分项加权平均60%外推；此为未验证的统一假设，不是实际观察。",
+          "assumed_weight_pct": 10.0,
+          "inferred_stages": [],
+          "extrapolated_stages": [
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "weight": 10,
+              "percent": 60.0
+            }
+          ]
+        },
+        "retained_current_estimates": 7,
+        "quality_filter_applied": false,
+        "quality_rejected_estimates": null
+      },
+      "v8": {
+        "function_path": "filter_observations(raw, 1) -> current_rows(filtered, None, date) -> estimate_supported(rows)",
+        "overall": {
+          "total_estimate_pct": null,
+          "total_possible_range_pct": [
+            45.0,
+            73.0
+          ],
+          "total_reference_pct": 59.0,
+          "current_coverage_pct": 90.0,
+          "historical_coverage_pct": 0.0,
+          "assessed_only_pct": 60.0,
+          "project_progress_pct": null,
+          "project_progress_method": "insufficient_evidence",
+          "project_progress_basis": "直接证据未覆盖全部分项，仅报告可估算分项及全工程可能区间；不按均值外推未知项。",
+          "assumed_weight_pct": 10.0,
+          "inferred_stages": [],
+          "extrapolated_stages": []
+        },
+        "retained_current_estimates": 7,
+        "quality_filter_applied": true,
+        "quality_review": {
+          "policy": "v8-grounded-evidence",
+          "min_confidence": 0.7,
+          "threshold_calibrated": false,
+          "accepted_estimates": 7,
+          "rejected_estimates": 0,
+          "stages": [
+            {
+              "id": "preparation",
+              "name": "施工准备与临时道路",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "dam_foundation",
+              "name": "坝基开挖及处理",
+              "accepted": false,
+              "had_estimate": false,
+              "reasons": [
+                "缺少有效百分比、状态或范围依据"
+              ]
+            },
+            {
+              "id": "diversion",
+              "name": "导流与围堰",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "dam_body",
+              "name": "大坝主体",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "spillway",
+              "name": "溢洪道",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "intake_outlet",
+              "name": "取放水建筑物",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "electromechanical",
+              "name": "金属结构及机电安装",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            },
+            {
+              "id": "ancillary",
+              "name": "护坡排水及附属工程",
+              "accepted": true,
+              "had_estimate": true,
+              "reasons": []
+            }
+          ]
+        }
+      },
+      "assertions_passed": true
+    }
+  ]
+}

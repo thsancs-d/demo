@@ -1,0 +1,23 @@
+{
+  "files_sha256": {
+    "src/progress_tracker.py": "b0de760cb302f1e99ebc7f052368ef87981947f4d055e9fc9f7a762fcf5c3958",
+    "src/recognition_quality.py": "3185993fbc07c563ead24b23a246ee96df50e18a28bfd1c6d84925c5b698bb9e",
+    "src/vlm_report.py": "173c2d2d0e4924bcb8a3b02cb6ff42a435a7bf9fdaadf7f8a5fc28c4dc0920ba",
+    "config/aigawa_context.json": "560f80f4e45535ba1e523c84c4a3d73264a11badb900f0afbf06b72f8b0bf1ec",
+    "validation/effect_check_20261126/v7_tracker_snapshot.py": "1a5a838d71f5d458ba5cac5b13dc69b0528a268ba7122e98dc1326e26dfb3f47",
+    "datasets/aigawa/images/2019-06.png": "eebef99d5fd082cc4d158a684e1f79131b836921c76d11171816511663d5049d",
+    "datasets/aigawa/images/2020-04.png": "329c154af4a340d5f429cc727cc916de4c2b493ed21e8b4cedb77e7016875a06",
+    "datasets/aigawa/images/2021-01.png": "ae104fd6802a13d05aa06c3bcc997b2ac305e880548c005491266468a7fd6eb5",
+    "datasets/aigawa/images/2022-02.png": "09712fa6b665a5f8dfe543e0c1d799c954a83b0328ebba7cfcd215fb0996a32d"
+  },
+  "model": "deepseek-v4-flash",
+  "thinking": "default, --fast not enabled",
+  "trials_per_version_per_period": 1,
+  "online_period_runs_completed": 8,
+  "notes": [
+    "Same four original images, context, model, CV implementation, and chronological sequence for both versions.",
+    "V7 uses frozen pre-V8 tracker snapshot; V8 uses current tracker. Historical outputs evolve separately per version.",
+    "No ground-truth milestones were inserted into the model prompts.",
+    "Single stochastic run per version; not a calibrated accuracy or stability study."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "prompt_version": "v9-fixed-camera-temporal",
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "8986c30cd557ed460fef9349478f28721dae2800ab399acdee4efce7a10ecf7f",
+  "images": [
+    {
+      "image_number": 1,
+      "role": "current_and_baseline",
+      "date": "2020-04",
+      "label": "图1：本期照片兼永久基准 2020-04",
+      "file": "observations/2020-04/original.jpg",
+      "sha256": "594663554bf02547579627289e88e8ff43f47a5e214822d5a14888460749b422",
+      "encoded_sha256": "063337708f6767c3edfaa23a5d2b8086009360a5669c3269a899fa8654dec457"
+    }
+  ],
+  "history_context": {
+    "baseline_date": null,
+    "previous_date": null,
+    "history": []
+  },
+  "execution_mode": "offline_test"
+}

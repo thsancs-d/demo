@@ -1,0 +1,33 @@
+{
+  "validation_type": "synthetic_response_workflow_check",
+  "dataset": "Ukawa Dam fixed-view photos from 2020-04 and 2020-07",
+  "images": [
+    "observations/2020-04/original.jpg",
+    "observations/2020-07/original.jpg"
+  ],
+  "first_period_change_count": 0,
+  "second_period_accepted_changes": 1,
+  "second_period_change": {
+    "stage_id": "dam_body",
+    "direction": "advanced",
+    "change_type": "expanded",
+    "evidence_image_numbers": [
+      1,
+      2
+    ],
+    "bbox_xyxy": [
+      0.32,
+      0.38,
+      0.62,
+      0.72
+    ],
+    "where": "画面中央坝体区域（模拟输入）",
+    "what": "同一观察区域的坝体范围扩大（模拟输入）",
+    "confidence": 0.8,
+    "visibility": "partial",
+    "basis": "same_region_comparison"
+  },
+  "project_progress_pct": null,
+  "project_progress_method": "insufficient_evidence",
+  "warning": "The event was supplied as synthetic offline input. This run verifies workflow behavior, not image recognition accuracy."
+}

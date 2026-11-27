@@ -1,0 +1,345 @@
+{
+  "version": "v8",
+  "model": "deepseek-v4-flash",
+  "dataset": "New Niigata Prefecture Ukawa Dam fixed-view sequence",
+  "execution_mode": "live",
+  "output": "/Users/yue/文件夹111/demo-main/output/ukawa_fixed_blind_live_v8_20261126",
+  "periods": [
+    {
+      "date": "2020-04",
+      "project_progress_pct": null,
+      "coverage_pct": 0.0,
+      "range_pct": [
+        0.0,
+        100.0
+      ],
+      "quality_review": {
+        "policy": "v8-grounded-evidence",
+        "min_confidence": 0.7,
+        "threshold_calibrated": false,
+        "accepted_estimates": 0,
+        "rejected_estimates": 0,
+        "stages": [
+          {
+            "id": "preparation",
+            "name": "施工准备与临时道路",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "完整计划范围不可辨认"
+            ]
+          },
+          {
+            "id": "dam_foundation",
+            "name": "坝基开挖及处理",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "本期可见证据不清晰或被遮挡",
+              "完整计划范围不可辨认"
+            ]
+          },
+          {
+            "id": "diversion",
+            "name": "导流与围堰",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "dam_body",
+            "name": "大坝主体",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "本期可见证据不清晰或被遮挡",
+              "完整计划范围不可辨认",
+              "比例依据不是可解释的完整施工范围"
+            ]
+          },
+          {
+            "id": "spillway",
+            "name": "溢洪道",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "完整计划范围不可辨认"
+            ]
+          },
+          {
+            "id": "intake_outlet",
+            "name": "取放水建筑物",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "electromechanical",
+            "name": "金属结构及机电安装",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "ancillary",
+            "name": "护坡排水及附属工程",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "本期可见证据不清晰或被遮挡",
+              "完整计划范围不可辨认"
+            ]
+          }
+        ]
+      },
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "unclear",
+          "confidence": 0.6,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_foundation",
+          "status": "unclear",
+          "confidence": 0.45,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.35,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "status": "unclear",
+          "confidence": 0.4,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "spillway",
+          "status": "unclear",
+          "confidence": 0.6,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.35,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "status": "unclear",
+          "confidence": 0.5,
+          "progress_estimate": null,
+          "source": "unknown"
+        }
+      ]
+    },
+    {
+      "date": "2020-07",
+      "project_progress_pct": null,
+      "coverage_pct": 0.0,
+      "range_pct": [
+        0.0,
+        100.0
+      ],
+      "quality_review": {
+        "policy": "v8-grounded-evidence",
+        "min_confidence": 0.7,
+        "threshold_calibrated": false,
+        "accepted_estimates": 0,
+        "rejected_estimates": 0,
+        "stages": [
+          {
+            "id": "preparation",
+            "name": "施工准备与临时道路",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "完整计划范围不可辨认"
+            ]
+          },
+          {
+            "id": "dam_foundation",
+            "name": "坝基开挖及处理",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "本期可见证据不清晰或被遮挡",
+              "完整计划范围不可辨认"
+            ]
+          },
+          {
+            "id": "diversion",
+            "name": "导流与围堰",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "dam_body",
+            "name": "大坝主体",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "本期可见证据不清晰或被遮挡",
+              "完整计划范围不可辨认"
+            ]
+          },
+          {
+            "id": "spillway",
+            "name": "溢洪道",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "完整计划范围不可辨认"
+            ]
+          },
+          {
+            "id": "intake_outlet",
+            "name": "取放水建筑物",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "electromechanical",
+            "name": "金属结构及机电安装",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "ancillary",
+            "name": "护坡排水及附属工程",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "本期可见证据不清晰或被遮挡",
+              "完整计划范围不可辨认"
+            ]
+          }
+        ]
+      },
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "in_progress",
+          "confidence": 0.6,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_foundation",
+          "status": "in_progress",
+          "confidence": 0.55,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.2,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "status": "unclear",
+          "confidence": 0.4,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "spillway",
+          "status": "in_progress",
+          "confidence": 0.75,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.15,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.15,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "status": "in_progress",
+          "confidence": 0.5,
+          "progress_estimate": null,
+          "source": "unknown"
+        }
+      ]
+    }
+  ],
+  "status": "completed",
+  "elapsed_seconds": 105.258
+}

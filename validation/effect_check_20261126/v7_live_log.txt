@@ -1,0 +1,44 @@
+[CV] 首期建立基准
+[调用] deepseek-v4-flash，1张图片，历史 0 期
+[完成] 默认(带思考)+json_mode
+findfont: Failed to find font weight bold for PingFang SC, now using 600.
+[总工程施工进度（估算）] 未知
+[上期进度] 未知；[本期变化] 无可比上期
+[基准进度] 未知；[累计估算变化] 未知
+[估算方式] 证据不足；[本期覆盖] 35.0%；[未直接估算权重] 65.0%
+[提示词版本] v7-cumulative-evidence
+[可能范围] 11.5%–86.8%；[实际工程量] 未提供
+[最新进度图] /Users/yue/文件夹111/demo-main/output/aigawa_effect_live_v7_20261126/latest_progress.png
+[CV] 通过几何检查，差分仅辅助
+[调用] deepseek-v4-flash，3张图片，历史 1 期
+[完成] 默认(带思考)+json_mode
+[总工程施工进度（估算）] 未知
+[上期进度] 未知；[本期变化] 无可比上期
+[基准进度] 未知；[累计估算变化] 未知
+[估算方式] 证据不足；[本期覆盖] 35.0%；[未直接估算权重] 65.0%
+[提示词版本] v7-cumulative-evidence
+[可能范围] 12.7%–88.0%；[实际工程量] 未提供
+[最新进度图] /Users/yue/文件夹111/demo-main/output/aigawa_effect_live_v7_20261126/latest_progress.png
+[CV] 多策略配准均未通过质量检查；保留原图，不生成新差分图
+[调用] deepseek-v4-flash，3张图片，历史 2 期
+[完成] 默认(带思考)+json_mode
+[总工程施工进度（估算）] 49.0%
+[上期进度] 未知；[本期变化] 无可比上期
+[基准进度] 未知；[累计估算变化] 未知
+[提示] 前后期估算方法不同，差值仅为估算变化
+[估算方式] 可见分项加权外推（含假设）；[本期覆盖] 75.0%；[未直接估算权重] 25.0%
+[提示词版本] v7-cumulative-evidence
+[可能范围] 25.5%–72.8%；[实际工程量] 未提供
+[最新进度图] /Users/yue/文件夹111/demo-main/output/aigawa_effect_live_v7_20261126/latest_progress.png
+[CV] 通过几何检查，差分仅辅助
+[调用] deepseek-v4-flash，4张图片，历史 3 期
+[完成] 默认(带思考)+json_mode
+[总工程施工进度（估算）] 未知
+[上期进度] 49.0%；[本期变化] 无可比上期
+[基准进度] 未知；[累计估算变化] 未知
+[提示] 前后期估算方法不同，差值仅为估算变化
+[估算方式] 证据不足；[本期覆盖] 65.0%；[未直接估算权重] 35.0%
+[提示词版本] v7-cumulative-evidence
+[可能范围] 46.2%–93.3%；[实际工程量] 未提供
+[最新进度图] /Users/yue/文件夹111/demo-main/output/aigawa_effect_live_v7_20261126/latest_progress.png
+{"version": "v7", "dataset": "datasets/aigawa/images", "execution_mode": "live", "output": "/Users/yue/文件夹111/demo-main/output/aigawa_effect_live_v7_20261126", "status": "completed", "elapsed_seconds": 272.413}

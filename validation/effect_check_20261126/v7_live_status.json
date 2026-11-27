@@ -1,0 +1,8 @@
+{
+  "version": "v7",
+  "dataset": "datasets/aigawa/images",
+  "execution_mode": "live",
+  "output": "/Users/yue/文件夹111/demo-main/output/aigawa_effect_live_v7_20261126",
+  "status": "completed",
+  "elapsed_seconds": 272.413
+}

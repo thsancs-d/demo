@@ -1,0 +1,10 @@
+{
+  "stages": [],
+  "inferred_stages": [],
+  "changes": [],
+  "risks": [
+    "离线模拟响应；变化事件不是人工标注或模型识别结果。"
+  ],
+  "summary": "固定镜头离线时序流程验证。",
+  "temporal_changes": []
+}

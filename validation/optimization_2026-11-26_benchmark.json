@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-26",
+  "python": "3.12.10",
+  "machine": "arm64",
+  "opencv": "4.12.0",
+  "opencv_threads": 8,
+  "image_size": [
+    425,
+    345
+  ],
+  "method": "Three adjacent real-photo pairs; warm each variant, then 9 alternating runs. Comparator disables only local SIFT feature reuse in memory.",
+  "samples_seconds_for_three_pairs": {
+    "without_reuse": [
+      0.489285,
+      0.400979,
+      0.356298,
+      0.363538,
+      0.396609,
+      0.377412,
+      0.358425,
+      0.351839,
+      0.360281
+    ],
+    "with_reuse": [
+      0.309807,
+      0.288866,
+      0.254882,
+      0.287787,
+      0.263207,
+      0.262532,
+      0.256779,
+      0.260412,
+      0.251414
+    ]
+  },
+  "median_seconds_for_three_pairs": {
+    "without_reuse": 0.363538,
+    "with_reuse": 0.262532
+  },
+  "reduction_pct": 27.78,
+  "same_transforms_and_diagnostics": true,
+  "pairs": [
+    {
+      "before": "2019-06",
+      "after": "2020-04",
+      "accepted": true,
+      "selected": {
+        "method": "RootSIFT",
+        "model": "homography",
+        "matches": 145,
+        "inliers": 80,
+        "inlier_ratio": 0.5517,
+        "accepted": true,
+        "reasons": [],
+        "ref_coverage": 0.5388,
+        "mov_coverage": 0.5426,
+        "median_error_px": 0.784,
+        "p90_error_px": 1.9,
+        "overlap_ratio": 0.97,
+        "ratio_test": 0.9
+      }
+    },
+    {
+      "before": "2020-04",
+      "after": "2021-01",
+      "accepted": false,
+      "selected": null
+    },
+    {
+      "before": "2021-01",
+      "after": "2022-02",
+      "accepted": true,
+      "selected": {
+        "method": "RootSIFT",
+        "model": "homography",
+        "matches": 21,
+        "inliers": 15,
+        "inlier_ratio": 0.7143,
+        "accepted": true,
+        "reasons": [],
+        "ref_coverage": 0.1064,
+        "mov_coverage": 0.0822,
+        "median_error_px": 1.682,
+        "p90_error_px": 2.523,
+        "overlap_ratio": 0.7775,
+        "ratio_test": 0.75
+      }
+    }
+  ]
+}

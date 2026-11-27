@@ -1,0 +1,516 @@
+{
+  "version": 1,
+  "context": {
+    "project_name": "鵜川大坝",
+    "dam_type": "岩石填筑坝（新潟县项目资料）",
+    "scope_note": "仅根据本期原图估算外观可见分项。堤体为岩石填筑坝；与洪水吐混凝土槽、基岩处理和取水放流设施分开识别。坝体高度、照片可见面积和像素变化不能直接换算工程量；隐蔽工序无法从外观确认。"
+  },
+  "mode": "offline_test_fixed_camera",
+  "history": [
+    {
+      "date": "2020-04",
+      "image": "observations/2020-04/original.jpg",
+      "sha256": "594663554bf02547579627289e88e8ff43f47a5e214822d5a14888460749b422",
+      "execution_mode": "offline_test",
+      "model": "offline_test",
+      "stages": [
+        {
+          "id": "preparation",
+          "name": "施工准备与临时道路",
+          "weight": 5,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_foundation",
+          "name": "坝基开挖及处理",
+          "weight": 10,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "diversion",
+          "name": "导流与围堰",
+          "weight": 10,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "name": "大坝主体",
+          "weight": 40,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "spillway",
+          "name": "溢洪道",
+          "weight": 15,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "intake_outlet",
+          "name": "取放水建筑物",
+          "weight": 10,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "name": "金属结构及机电安装",
+          "weight": 5,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "name": "护坡排水及附属工程",
+          "weight": 5,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        }
+      ],
+      "overall": {
+        "total_estimate_pct": null,
+        "total_possible_range_pct": [
+          0.0,
+          100.0
+        ],
+        "total_reference_pct": null,
+        "current_coverage_pct": 0.0,
+        "historical_coverage_pct": 0.0,
+        "assessed_only_pct": null,
+        "project_progress_pct": null,
+        "project_progress_method": "insufficient_evidence",
+        "project_progress_basis": "本期可估算工程权重不足，不能给出可靠单值。",
+        "assumed_weight_pct": 100.0,
+        "previous_project_progress_pct": null,
+        "project_progress_delta_pp": null,
+        "baseline_project_progress_pct": null,
+        "baseline_progress_delta_pp": null,
+        "previous_method_changed": false
+      },
+      "quantity_progress": null,
+      "prompt_version": "v9-fixed-camera-temporal",
+      "quality_review": {
+        "policy": "v8-grounded-evidence",
+        "min_confidence": 0.7,
+        "threshold_calibrated": false,
+        "accepted_estimates": 0,
+        "rejected_estimates": 0,
+        "stages": [
+          {
+            "id": "preparation",
+            "name": "施工准备与临时道路",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "dam_foundation",
+            "name": "坝基开挖及处理",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "diversion",
+            "name": "导流与围堰",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "dam_body",
+            "name": "大坝主体",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "spillway",
+            "name": "溢洪道",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "intake_outlet",
+            "name": "取放水建筑物",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "electromechanical",
+            "name": "金属结构及机电安装",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "ancillary",
+            "name": "护坡排水及附属工程",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          }
+        ]
+      },
+      "temporal_review": {
+        "policy": "v9-fixed-camera-temporal",
+        "accepted_changes": 0,
+        "rejected_changes": 0,
+        "reasons": [
+          "首期没有上一期图像"
+        ]
+      },
+      "temporal_changes": [],
+      "model_inferred_stages": [],
+      "cv": {
+        "eligible_diff": false,
+        "reason": "首期建立基准"
+      },
+      "changes": [],
+      "risks": [
+        "离线模拟响应；变化事件不是人工标注或模型识别结果。"
+      ],
+      "summary": "固定镜头离线时序流程验证。"
+    },
+    {
+      "date": "2020-07",
+      "image": "observations/2020-07/original.jpg",
+      "sha256": "e2ba81c20479938c9708dc777c51dd5040c37be0ec0d082bc39a0ebe7d8cf491",
+      "execution_mode": "offline_test",
+      "model": "offline_test",
+      "stages": [
+        {
+          "id": "preparation",
+          "name": "施工准备与临时道路",
+          "weight": 5,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_foundation",
+          "name": "坝基开挖及处理",
+          "weight": 10,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "diversion",
+          "name": "导流与围堰",
+          "weight": 10,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "name": "大坝主体",
+          "weight": 40,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "spillway",
+          "name": "溢洪道",
+          "weight": 15,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "intake_outlet",
+          "name": "取放水建筑物",
+          "weight": 10,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "name": "金属结构及机电安装",
+          "weight": 5,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "name": "护坡排水及附属工程",
+          "weight": 5,
+          "status": "unclear",
+          "evidence": "缺少有效可见证据，或工序缺失/重复",
+          "confidence": null,
+          "progress_estimate": null,
+          "observed_date": null,
+          "source": "unknown"
+        }
+      ],
+      "overall": {
+        "total_estimate_pct": null,
+        "total_possible_range_pct": [
+          0.0,
+          100.0
+        ],
+        "total_reference_pct": null,
+        "current_coverage_pct": 0.0,
+        "historical_coverage_pct": 0.0,
+        "assessed_only_pct": null,
+        "project_progress_pct": null,
+        "project_progress_method": "insufficient_evidence",
+        "project_progress_basis": "本期可估算工程权重不足，不能给出可靠单值。",
+        "assumed_weight_pct": 100.0,
+        "previous_project_progress_pct": null,
+        "project_progress_delta_pp": null,
+        "baseline_project_progress_pct": null,
+        "baseline_progress_delta_pp": null,
+        "previous_method_changed": false
+      },
+      "quantity_progress": null,
+      "prompt_version": "v9-fixed-camera-temporal",
+      "quality_review": {
+        "policy": "v8-grounded-evidence",
+        "min_confidence": 0.7,
+        "threshold_calibrated": false,
+        "accepted_estimates": 0,
+        "rejected_estimates": 0,
+        "stages": [
+          {
+            "id": "preparation",
+            "name": "施工准备与临时道路",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "dam_foundation",
+            "name": "坝基开挖及处理",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "diversion",
+            "name": "导流与围堰",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "dam_body",
+            "name": "大坝主体",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "spillway",
+            "name": "溢洪道",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "intake_outlet",
+            "name": "取放水建筑物",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "electromechanical",
+            "name": "金属结构及机电安装",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          },
+          {
+            "id": "ancillary",
+            "name": "护坡排水及附属工程",
+            "accepted": false,
+            "had_estimate": false,
+            "reasons": [
+              "分项缺失或重复",
+              "缺少有效百分比、状态或范围依据",
+              "置信度不足或无效（筛选阈值未标定）",
+              "缺少结构化本期证据"
+            ]
+          }
+        ]
+      },
+      "temporal_review": {
+        "policy": "v9-fixed-camera-temporal",
+        "accepted_changes": 1,
+        "rejected_changes": 0,
+        "reasons": []
+      },
+      "temporal_changes": [
+        {
+          "stage_id": "dam_body",
+          "direction": "advanced",
+          "change_type": "expanded",
+          "evidence_image_numbers": [
+            1,
+            2
+          ],
+          "bbox_xyxy": [
+            0.32,
+            0.38,
+            0.62,
+            0.72
+          ],
+          "where": "画面中央坝体区域（模拟输入）",
+          "what": "同一观察区域的坝体范围扩大（模拟输入）",
+          "confidence": 0.8,
+          "visibility": "partial",
+          "basis": "same_region_comparison"
+        }
+      ],
+      "model_inferred_stages": [],
+      "cv": {
+        "eligible_diff": false,
+        "reason": "跳过CV"
+      },
+      "changes": [],
+      "risks": [
+        "离线模拟响应；变化事件不是人工标注或模型识别结果。"
+      ],
+      "summary": "固定镜头离线时序流程验证。"
+    }
+  ]
+}

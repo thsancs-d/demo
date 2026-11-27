@@ -1,0 +1,33 @@
+{
+  "validation_type": "offline_replay_of_live_model_responses",
+  "source_live_output": "/Users/yue/文件夹111/demo-main/output/ukawa_fixed_temporal_live_20261126",
+  "replay_output": "/Users/yue/文件夹111/demo-main/output/ukawa_fixed_temporal_replay_20261126",
+  "dates": [
+    "2020-04",
+    "2020-07"
+  ],
+  "first_period_events": 0,
+  "second_period_accepted_events": 2,
+  "second_period_rejected_events": 1,
+  "rejected_event_reasons": [
+    {
+      "stage_id": "preparation",
+      "reasons": [
+        "临时或未知变化不能标记为 advanced"
+      ]
+    }
+  ],
+  "stage_statuses": {
+    "preparation": "in_progress",
+    "dam_foundation": "in_progress",
+    "diversion": "unclear",
+    "dam_body": "in_progress",
+    "spillway": "in_progress",
+    "intake_outlet": "unclear",
+    "electromechanical": "unclear",
+    "ancillary": "in_progress"
+  },
+  "dam_body_evidence": "中央谷底可见土石填筑面较上期扩大并形成连续平台；按岩石填筑坝识别，不估算体积。",
+  "project_progress_pct": null,
+  "warning": "Replay reuses actual live model responses but measures parser/policy behavior only, not event-label accuracy."
+}

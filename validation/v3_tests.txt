@@ -1,0 +1,41 @@
+test_cv_and_cli (test_integration.TestIntegration.test_cv_and_cli) ... ok
+test_hidden (test_integration.TestIntegration.test_hidden) ... ok
+test_missing_and_duplicates (test_integration.TestIntegration.test_missing_and_duplicates) ... ok
+test_profiles (test_integration.TestIntegration.test_profiles) ... ok
+test_prompt (test_integration.TestIntegration.test_prompt) ... ok
+test_quantities (test_integration.TestIntegration.test_quantities) ... ok
+test_report (test_integration.TestIntegration.test_report) ... ok
+test_roi (test_integration.TestIntegration.test_roi) ... ok
+test_score (test_integration.TestIntegration.test_score) ... ok
+test_summarize (test_integration.TestIntegration.test_summarize) ... ok
+test_affine_and_change (test_registration.TestRegistration.test_affine_and_change) ... ok
+test_degenerate_rejected (test_registration.TestRegistration.test_degenerate_rejected) ... ok
+test_manual_independent_check (test_registration.TestRegistration.test_manual_independent_check) ... ok
+test_real_pair_safe_fallback (test_registration.TestRegistration.test_real_pair_safe_fallback) ... ok
+test_unrelated_rejected (test_registration.TestRegistration.test_unrelated_rejected) ... ok
+test_all_estimated (test_visual_phase.V3.test_all_estimated) ... ok
+test_context (test_visual_phase.V3.test_context) ... ok
+test_duplicate (test_visual_phase.V3.test_duplicate) ... ok
+test_evaluate (test_visual_phase.V3.test_evaluate) ... ok
+test_hidden (test_visual_phase.V3.test_hidden) ... ok
+test_invalid (test_visual_phase.V3.test_invalid) ... ok
+test_no_fixed_stage_conversion (test_visual_phase.V3.test_no_fixed_stage_conversion) ... ok
+test_percentage (test_visual_phase.V3.test_percentage) ... ok
+test_replay (test_visual_phase.V3.test_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 5.922s
+
+OK
+# 水库多期施工进度（影像估算）
+
+| 日期区间 | 大坝前期 | 大坝后期 | 后期全工程估计 | 全工程可能范围 | 可估算分项加权进度 | 覆盖权重 |
+|---|---|---|---|---|---|---|
+| 2019-06 → 2020-04 | 20%（10%–30%） | 70%（60%–80%） | 无法估算 | 24%–92% | 70% | 40/100 |
+
+## 分项百分比（后期）
+| 日期 | 施工准备与临时道路 | 坝基开挖及处理 | 导流与围堰 | 大坝主体 | 溢洪道 | 取放水建筑物 | 金属结构及机电安装 | 护坡排水及附属工程 |
+|---|---|---|---|---|---|---|---|---|
+| 2020-04 | 无法估算 | 无法估算 | 无法估算 | 70%（60%–80%） | 无法估算 | 无法估算 | 无法估算 | 无法估算 |
+
+不同期的覆盖范围可能不同。影像估算不等于真实工程量。重复出现的同一日期可能具有不同估算值，不强制单调上升。

@@ -1,0 +1,33 @@
+{
+  "name": "新潟县 鵜川大坝 2020 固定点航拍",
+  "camera_view": "下游侧上空からダムサイトを望む / 下流侧上空眺望坝址",
+  "photos": [
+    {
+      "date_month": "2020-04",
+      "file": "data/before.jpg",
+      "official_month_page": "https://www.pref.niigata.lg.jp/site/kashiwazaki-seibi/r-2-4kouzinoyousu.html",
+      "official_photo_title": "下流上空よりダムサイトを望む",
+      "monthly_fact": "堤体河床部已撤除冬季保护层，接下来将开展本格填筑。"
+    },
+    {
+      "date_month": "2020-07",
+      "file": "data/after.jpg",
+      "official_month_page": "https://www.pref.niigata.lg.jp/site/kashiwazaki-seibi/r-2-7kouzinoyousu.html",
+      "official_photo_title": "下流側上空からダムサイトを望む",
+      "monthly_fact": "页面提供堤体河床部盛立进度照片及截至7月31日的堤坝断面图。"
+    }
+  ],
+  "disclaimer": "新潟县官方将两张均列在定点写真栏并使用相同下游航拍视角标题；这是固定摄影位置的近似序列，不证明像素级同机位或相同镜头参数。官方施工文字只能支持阶段性核对，未提供影像分项完成百分比真值。",
+  "blind_run_context": "项目名称、坝型与一般范围规则；不含按日期区分的工程阶段或进度。提示词经运行后检查，未发现把官方月份事实写入模型输入。模型仍可能从预训练知识中记得公开工程资料。",
+  "excluded_initial_run": "第一次试跑的上下文意外包括按日期描述的施工事实，可能把答案提示给模型。该组结果及输出目录没有纳入报告、指标或图表。正式对照使用去掉日期事实后的上下文和新输出目录。",
+  "non_fixed_view_images_excluded": [
+    {
+      "image_url": "https://www.pref.niigata.lg.jp/uploaded/image/146488.jpg",
+      "why": "4月的堤体河床部近景带A-A断面标线，机位靠近坝体。"
+    },
+    {
+      "image_url": "https://www.pref.niigata.lg.jp/uploaded/image/153959.jpg",
+      "why": "7月的堤体进度图为宽幅全景；与4月近景构图明显不同，未当作同一固定相机序列。"
+    }
+  ]
+}

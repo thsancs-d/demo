@@ -1,0 +1,279 @@
+{
+  "used_diff": false,
+  "eligible_diff": false,
+  "reason": "多策略配准均未通过质量检查；保留原图，不生成新差分图",
+  "registration": {
+    "candidates": [
+      {
+        "method": "SIFT",
+        "model": "affine",
+        "matches": 1,
+        "inliers": 0,
+        "inlier_ratio": 0.0,
+        "accepted": false,
+        "reasons": [
+          "无有效变换"
+        ],
+        "ratio_test": 0.75
+      },
+      {
+        "method": "SIFT",
+        "model": "homography",
+        "matches": 1,
+        "inliers": 0,
+        "inlier_ratio": 0.0,
+        "accepted": false,
+        "reasons": [
+          "无有效变换"
+        ],
+        "ratio_test": 0.75
+      },
+      {
+        "method": "SIFT",
+        "model": "affine",
+        "matches": 40,
+        "inliers": 4,
+        "inlier_ratio": 0.1,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "重叠率不足"
+        ],
+        "ref_coverage": 0.171,
+        "mov_coverage": 0.372,
+        "median_error_px": 1.773,
+        "p90_error_px": 2.79,
+        "overlap_ratio": 0.3955,
+        "ratio_test": 0.85
+      },
+      {
+        "method": "SIFT",
+        "model": "homography",
+        "matches": 40,
+        "inliers": 5,
+        "inlier_ratio": 0.125,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "投影地平线穿过图像"
+        ],
+        "ref_coverage": 0.283,
+        "mov_coverage": 0.3464,
+        "ratio_test": 0.85
+      },
+      {
+        "method": "SIFT",
+        "model": "affine",
+        "matches": 128,
+        "inliers": 5,
+        "inlier_ratio": 0.0391,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "内点空间覆盖不足",
+          "投影形状、方向或面积异常"
+        ],
+        "ref_coverage": 0.0297,
+        "mov_coverage": 0.2026,
+        "ratio_test": 0.9
+      },
+      {
+        "method": "SIFT",
+        "model": "homography",
+        "matches": 128,
+        "inliers": 5,
+        "inlier_ratio": 0.0391,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "投影地平线穿过图像"
+        ],
+        "ref_coverage": 0.1101,
+        "mov_coverage": 0.2547,
+        "ratio_test": 0.9
+      },
+      {
+        "method": "RootSIFT",
+        "model": "affine",
+        "matches": 0,
+        "inliers": 0,
+        "inlier_ratio": 0.0,
+        "accepted": false,
+        "reasons": [
+          "无有效变换"
+        ],
+        "ratio_test": 0.75
+      },
+      {
+        "method": "RootSIFT",
+        "model": "homography",
+        "matches": 0,
+        "inliers": 0,
+        "inlier_ratio": 0.0,
+        "accepted": false,
+        "reasons": [
+          "无有效变换"
+        ],
+        "ratio_test": 0.75
+      },
+      {
+        "method": "RootSIFT",
+        "model": "affine",
+        "matches": 19,
+        "inliers": 3,
+        "inlier_ratio": 0.1579,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "内点空间覆盖不足"
+        ],
+        "ref_coverage": 0.015,
+        "mov_coverage": 0.0325,
+        "ratio_test": 0.85
+      },
+      {
+        "method": "RootSIFT",
+        "model": "homography",
+        "matches": 19,
+        "inliers": 4,
+        "inlier_ratio": 0.2105,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "内点空间覆盖不足",
+          "投影地平线穿过图像"
+        ],
+        "ref_coverage": 0.1319,
+        "mov_coverage": 0.0566,
+        "ratio_test": 0.85
+      },
+      {
+        "method": "RootSIFT",
+        "model": "affine",
+        "matches": 87,
+        "inliers": 4,
+        "inlier_ratio": 0.046,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "投影形状、方向或面积异常"
+        ],
+        "ref_coverage": 0.1486,
+        "mov_coverage": 0.1019,
+        "ratio_test": 0.9
+      },
+      {
+        "method": "RootSIFT",
+        "model": "homography",
+        "matches": 87,
+        "inliers": 5,
+        "inlier_ratio": 0.0575,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "投影地平线穿过图像"
+        ],
+        "ref_coverage": 0.1862,
+        "mov_coverage": 0.1804,
+        "ratio_test": 0.9
+      },
+      {
+        "method": "AKAZE",
+        "model": "affine",
+        "matches": 1,
+        "inliers": 0,
+        "inlier_ratio": 0.0,
+        "accepted": false,
+        "reasons": [
+          "无有效变换"
+        ],
+        "ratio_test": 0.75
+      },
+      {
+        "method": "AKAZE",
+        "model": "homography",
+        "matches": 1,
+        "inliers": 0,
+        "inlier_ratio": 0.0,
+        "accepted": false,
+        "reasons": [
+          "无有效变换"
+        ],
+        "ratio_test": 0.75
+      },
+      {
+        "method": "AKAZE",
+        "model": "affine",
+        "matches": 28,
+        "inliers": 3,
+        "inlier_ratio": 0.1071,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "内点空间覆盖不足"
+        ],
+        "ref_coverage": 0.0293,
+        "mov_coverage": 0.0,
+        "ratio_test": 0.85
+      },
+      {
+        "method": "AKAZE",
+        "model": "homography",
+        "matches": 28,
+        "inliers": 4,
+        "inlier_ratio": 0.1429,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "投影地平线穿过图像"
+        ],
+        "ref_coverage": 0.1031,
+        "mov_coverage": 0.0635,
+        "ratio_test": 0.85
+      },
+      {
+        "method": "AKAZE",
+        "model": "affine",
+        "matches": 70,
+        "inliers": 4,
+        "inlier_ratio": 0.0571,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "内点空间覆盖不足",
+          "投影形状、方向或面积异常"
+        ],
+        "ref_coverage": 0.0335,
+        "mov_coverage": 0.0383,
+        "ratio_test": 0.9
+      },
+      {
+        "method": "AKAZE",
+        "model": "homography",
+        "matches": 70,
+        "inliers": 5,
+        "inlier_ratio": 0.0714,
+        "accepted": false,
+        "reasons": [
+          "内点数不足",
+          "内点率不足",
+          "投影地平线穿过图像"
+        ],
+        "ref_coverage": 0.0615,
+        "mov_coverage": 0.129,
+        "ratio_test": 0.9
+      }
+    ]
+  }
+}

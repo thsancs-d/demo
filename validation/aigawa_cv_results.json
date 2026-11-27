@@ -1,0 +1,54 @@
+[
+  {
+    "pair": "2019-06_to_2020-04",
+    "eligible_diff": true,
+    "reason": "通过几何质量检查；差分仅作辅助，原图优先",
+    "selected": {
+      "method": "RootSIFT",
+      "model": "homography",
+      "matches": 137,
+      "inliers": 81,
+      "inlier_ratio": 0.5912,
+      "accepted": true,
+      "reasons": [],
+      "ref_coverage": 0.5363,
+      "mov_coverage": 0.5384,
+      "median_error_px": 0.745,
+      "p90_error_px": 1.738,
+      "overlap_ratio": 0.9725,
+      "ratio_test": 0.9
+    }
+  },
+  {
+    "pair": "2019-06_to_2022-02",
+    "eligible_diff": false,
+    "reason": "多策略配准均未通过质量检查；保留原图，不生成新差分图",
+    "selected": null
+  },
+  {
+    "pair": "2020-04_to_2021-01",
+    "eligible_diff": false,
+    "reason": "多策略配准均未通过质量检查；保留原图，不生成新差分图",
+    "selected": null
+  },
+  {
+    "pair": "2021-01_to_2022-02",
+    "eligible_diff": true,
+    "reason": "通过几何质量检查；差分仅作辅助，原图优先",
+    "selected": {
+      "method": "AKAZE",
+      "model": "homography",
+      "matches": 22,
+      "inliers": 12,
+      "inlier_ratio": 0.5455,
+      "accepted": true,
+      "reasons": [],
+      "ref_coverage": 0.1044,
+      "mov_coverage": 0.0785,
+      "median_error_px": 1.67,
+      "p90_error_px": 2.196,
+      "overlap_ratio": 0.7422,
+      "ratio_test": 0.85
+    }
+  }
+]

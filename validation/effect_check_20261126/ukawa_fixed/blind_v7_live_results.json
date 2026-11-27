@@ -1,0 +1,211 @@
+{
+  "version": "v7",
+  "model": "deepseek-v4-flash",
+  "dataset": "New Niigata Prefecture Ukawa Dam fixed-view sequence",
+  "execution_mode": "live",
+  "output": "/Users/yue/文件夹111/demo-main/output/ukawa_fixed_blind_live_v7_20261126",
+  "periods": [
+    {
+      "date": "2020-04",
+      "project_progress_pct": null,
+      "coverage_pct": 35.0,
+      "range_pct": [
+        11.25,
+        86.75
+      ],
+      "quality_review": null,
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "in_progress",
+          "confidence": 0.7,
+          "progress_estimate": {
+            "percent": 70,
+            "range_pct": [
+              55,
+              85
+            ],
+            "scope_basis": "全工程计划范围内的施工便道、场地平整、施工平台和临建设施。",
+            "completed_basis": "道路网络和主要平台已大面积成型，临建已投入使用；按可见覆盖范围与仍需整理区域给宽范围，临建存在不等于全部准备完成。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "dam_foundation",
+          "status": "in_progress",
+          "confidence": 0.5,
+          "progress_estimate": {
+            "percent": 40,
+            "range_pct": [
+              25,
+              55
+            ],
+            "scope_basis": "整个坝基及坝肩的开挖、清基和处理范围。",
+            "completed_basis": "可见开挖面已成形，但仍有土石方、覆盖区和未整形部位；仅按外观开挖覆盖估宽范围，隐蔽处理不计入已证实完成。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.35,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "status": "unclear",
+          "confidence": 0.45,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "spillway",
+          "status": "in_progress",
+          "confidence": 0.6,
+          "progress_estimate": {
+            "percent": 50,
+            "range_pct": [
+              35,
+              65
+            ],
+            "scope_basis": "溢洪道进水渠、控制段、泄槽、消能设施及模板钢筋和混凝土成型的全范围。",
+            "completed_basis": "泄槽混凝土成型段占可见长度的一部分；按可见成型段与未完成上游控制段、下游消能及安装估宽范围，不把局部泄槽当整条完成。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.25,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "status": "in_progress",
+          "confidence": 0.55,
+          "progress_estimate": {
+            "percent": 30,
+            "range_pct": [
+              15,
+              45
+            ],
+            "scope_basis": "全工程护坡、排水沟、坝顶道路、绿化及场地恢复。",
+            "completed_basis": "仅部分岸坡防护、排水和道路成型，恢复类工作明显未完成；因与坝基开挖边坡边界可能重叠，取较窄较低宽范围。"
+          },
+          "source": "current_image"
+        }
+      ]
+    },
+    {
+      "date": "2020-07",
+      "project_progress_pct": null,
+      "coverage_pct": 35.0,
+      "range_pct": [
+        12.25,
+        88.0
+      ],
+      "quality_review": null,
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "in_progress",
+          "confidence": 0.5,
+          "progress_estimate": {
+            "percent": 68,
+            "range_pct": [
+              50,
+              85
+            ],
+            "scope_basis": "全工程计划范围内的施工便道、场地平整、施工平台及临建设施（按整项计划范围计入，不因本期新增临建而扩大分母）。",
+            "completed_basis": "以可见成网便道覆盖的岸坡与河谷范围、已成型的中央及右侧平台、已投入使用的板房与集装箱为完成部分；扣除仍在开挖整形、堆土未清运、便道未衔接坝顶的区域后取宽范围，不做固定增量或取整凑数。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "dam_foundation",
+          "status": "in_progress",
+          "confidence": 0.45,
+          "progress_estimate": {
+            "percent": 45,
+            "range_pct": [
+              30,
+              60
+            ],
+            "scope_basis": "整个坝基及坝肩的开挖、清基与处理范围（含可见边坡防护，不重复计入附属护坡）。",
+            "completed_basis": "按可见开挖覆盖范围和处理面成型面积估比例：两岸坝肩开挖面基本贯通，河床处理面大面积成型；剩余上下游边缘整形、覆盖区清理及全部隐蔽处理未证实，故取宽范围而未上调至更高。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.25,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "spillway",
+          "status": "in_progress",
+          "confidence": 0.5,
+          "progress_estimate": {
+            "percent": 55,
+            "range_pct": [
+              40,
+              70
+            ],
+            "scope_basis": "溢洪道进水渠、控制段、泄槽、消能设施及模板钢筋与混凝土成型面的完整范围，不含坝体与取水放流设施。",
+            "completed_basis": "以可见混凝土成型泄槽段长度占计划全长（含上游控制段和下游消能段）的比例为主，加已完成的模板与钢筋作业面；扣除未成型的控制段、消能设施和金属结构安装，因机位变化不能精确量测，取宽范围。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.25,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.2,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "status": "in_progress",
+          "confidence": 0.4,
+          "progress_estimate": {
+            "percent": 30,
+            "range_pct": [
+              15,
+              45
+            ],
+            "scope_basis": "全工程护坡、排水沟、坝顶道路、绿化及场地恢复的完整范围（与坝基临时边坡防护不重复计量）。",
+            "completed_basis": "以可见岸坡防护和排水、道路成型段为完成部分；坝顶道路、系统排水和恢复类工作基本未完成，且与开挖边坡边界可能重叠，故取较窄的低宽范围。"
+          },
+          "source": "current_image"
+        }
+      ]
+    }
+  ],
+  "status": "completed",
+  "elapsed_seconds": 165.867
+}

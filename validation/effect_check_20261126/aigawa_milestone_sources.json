@@ -1,0 +1,69 @@
+{
+  "project": "日本安威川大坝（安威川ダム）",
+  "checked_on": "2026-11-26",
+  "verification_method": "Opened and read the public primary-source web pages through the web tool; evidence is not based solely on search snippets.",
+  "verified_claim": {
+    "scope": "坝体填筑（堤体盛立）完成",
+    "contractor_reported_date": "2022-01-26",
+    "government_corroborated_month": "2022-01",
+    "status": "verified_at_month_resolution; exact day is the contractor's reported completion and ceremony date"
+  },
+  "sources": [
+    {
+      "publisher": "株式会社大林組 / OBAYASHI DAM WORLD",
+      "type": "contractor_primary_source",
+      "title": "安威川ダム堤体盛り立て完了",
+      "url": "https://www.obayashi.co.jp/damworld/news/news20220126.html",
+      "page_date": "2022-01-26",
+      "quotes": [
+        "2022年1月26日（水）安威川ダムの堤体盛り立てが完了し、関係者により盛り立て完了式が行われました。",
+        "今後は取水放流施設工や基礎処理工を完了し、2022年中に試験湛水を開始する予定です。"
+      ],
+      "interpretation": "施工方明确报道当日坝体填筑完成并举行仪式；同文明确还有取水放流设施和基础处理工程待完成。"
+    },
+    {
+      "publisher": "大阪府",
+      "type": "government_primary_source",
+      "title": "安威川ダム建設事業の経過",
+      "url": "https://www.pref.osaka.lg.jp/o130290/aigawa/aidamu/keika1.html",
+      "page_updated_on": "2024-05-24",
+      "quotes": [
+        "令和4年1月　ダム堤体の盛立が完了",
+        "令和4年3月　取水放流設備完成",
+        "令和4年4月　非常用洪水吐き完成",
+        "令和4年9月　試験湛水開始（令和4年9月5日）",
+        "令和5年9月　ダム管理運用開始",
+        "令和6年3月　ダム建設事業完了（令和6年3月20日 式典開催）"
+      ],
+      "interpretation": "政府年表独立佐证填筑完成月份为2022年1月，并区分2022年3月取水放流设备、4月应急溢洪道、9月5日试蓄水、2023年9月运行、2024年3月整体项目完成。2024-03-20是式典日期，不能额外推断为全部工作精确完工日。"
+    },
+    {
+      "publisher": "大阪府",
+      "type": "government_primary_source_with_date_caveat",
+      "title": "安威川ダムフォトギャラリー",
+      "url": "https://www.pref.osaka.lg.jp/o130290/aigawa/photogallery/index.html",
+      "page_updated_on": "2024-07-08",
+      "quotes": [
+        "盛立完了（直下から）",
+        "撮影日：2022年1月15日"
+      ],
+      "interpretation": "图库将一张2022年1月15日照片标为填筑完成。与施工方1月26日报告/仪式日期存在日级口径差异；本次不猜测原因、不认定1月15日为精确完工日。该差异不影响2022年2月晚于填筑完成月份的判断。"
+    }
+  ],
+  "endpoint_validation_scope": {
+    "candidate_image_month": "2022-02",
+    "image_month_provenance": "现有 datasets/aigawa/labels.json 声明日期来自用户四宫格原图、精度到月份；本次来源核查未独立验证该图片拍摄日期。",
+    "expected_stage_if_image_date_is_correct": "坝体填筑已完成",
+    "supportable_check": "仅对2022-02图像的坝体填筑完成阶段进行一次外部里程碑一致性检查；需预测目标确实定义为坝体填筑，且拍摄月份正确。",
+    "numerical_visual_ground_truth": null,
+    "excluded_interpretations": [
+      "不证明该图的可见区域完成面积为100%。",
+      "不证明整个水库项目、设备设施或附属工程完成100%。",
+      "不提供2019-06、2020-04、2021-01的工程量或视觉面积进度百分比。",
+      "不能以单个完成阶段端点推断跨月份数值精度、总体模型准确率、MAE或RMSE的可靠性。",
+      "若模型获知项目名称、拍摄日期或该公开里程碑，结果也可能包含先验知识，不能单独证明纯视觉推断能力。"
+    ],
+    "numeric_label_note": "现有dam_fill_percent=100只可解释为填筑工作完成这一终点的规范化表达；本记录不新增百分比真值、不把它转换为视觉面积标签。"
+  },
+  "files_not_modified": ["datasets/aigawa/labels.json", "application/model source files"]
+}

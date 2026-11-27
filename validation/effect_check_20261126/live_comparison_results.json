@@ -1,0 +1,187 @@
+{
+  "validation_kind": "live_model_comparison",
+  "model": "deepseek-v4-flash",
+  "gateway_host": "hub.thinvent.com",
+  "versions": {
+    "v7": {
+      "periods": [
+        {
+          "date": "2019-06",
+          "total_pct": null,
+          "weighted_evidence_coverage_pct": 35.0,
+          "possible_range_pct": [
+            11.5,
+            86.75
+          ],
+          "direct_stage_estimates": 4,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 4,
+          "raw_percent_candidates": 4,
+          "postfilter_rejected_estimates": null,
+          "dam_body_status": "unclear",
+          "dam_body_estimate": null,
+          "summary": "2019-06照片显示场地准备、坝基开挖处理和右岸溢洪道混凝土/护坡施工正在进行；未见到明确可辨的堆石坝填筑体及永久闸门机电安装。仅对可见范围分项给出粗略累计估算，导流、坝体、取放水和机电因遮挡或范围证据不足保持未知。"
+        },
+        {
+          "date": "2020-04",
+          "total_pct": null,
+          "weighted_evidence_coverage_pct": 35.0,
+          "possible_range_pct": [
+            12.65,
+            88.05
+          ],
+          "direct_stage_estimates": 4,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 4,
+          "raw_percent_candidates": 4,
+          "postfilter_rejected_estimates": null,
+          "dam_body_status": "unclear",
+          "dam_body_estimate": null,
+          "summary": "2020-04影像显示工程仍以坝基开挖处理、右岸溢洪道与护坡结构施工为主，右岸格构护坡与混凝土衬砌范围较2019-06有所扩展，场内便道与平台维持使用；未见可辨认的堆石坝填筑体与永久机电安装，导流及取放水建筑物范围不清，相关分项未作进度估算。"
+        },
+        {
+          "date": "2021-01",
+          "total_pct": 49.0,
+          "weighted_evidence_coverage_pct": 75.0,
+          "possible_range_pct": [
+            25.5,
+            72.75
+          ],
+          "direct_stage_estimates": 5,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 5,
+          "raw_percent_candidates": 5,
+          "postfilter_rejected_estimates": null,
+          "dam_body_status": "in_progress",
+          "dam_body_estimate": {
+            "percent": 40,
+            "range_pct": [
+              25,
+              55
+            ],
+            "scope_basis": "整个中央心墙型堆石坝坝体填筑，包括堆石区、心墙、过渡层及坝坡填筑，不含坝基处理和溢洪道混凝土。",
+            "completed_basis": "可见层状填筑体已覆盖河床并形成一定高度和范围，但坝顶与完整坝坡轮廓未形成；按整个坝体填筑范围取中低比例，不以可见高度或面积直接等同体积完成率。"
+          },
+          "summary": "本期可见大坝主体堆石填筑体明显出露并呈层状台阶，右岸泄槽及格构护坡继续成型，施工便道和平台仍在使用；导流、取放水建筑物及机电安装因遮挡或未入镜无法可靠估算，未输出总工程进度。"
+        },
+        {
+          "date": "2022-02",
+          "total_pct": null,
+          "weighted_evidence_coverage_pct": 65.0,
+          "possible_range_pct": [
+            46.2,
+            93.35
+          ],
+          "direct_stage_estimates": 4,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 1,
+          "raw_percent_candidates": 4,
+          "postfilter_rejected_estimates": null,
+          "dam_body_status": "in_progress",
+          "dam_body_estimate": {
+            "percent": 85,
+            "range_pct": [
+              75,
+              92
+            ],
+            "scope_basis": "中央心墙型堆石坝整个坝体填筑，包括堆石区、心墙、过渡层及坝坡填筑，不含坝基处理和混凝土溢洪道。",
+            "completed_basis": "可见堆石体已填至接近坝顶并在大部分坝轴范围成形，按整个坝体填筑体积取中高比例；未把可见坡面面积或高度直接当体积，剩余坝顶、上游面及隐蔽分区未计满。"
+          },
+          "summary": "本期照片显示堆石坝填筑体已大范围抬高并接近坝顶轮廓，右岸溢洪道泄槽混凝土连续成形，附属护坡绿化和局部道路扩展；现场仍有施工便道、平台和机械。坝基处理、导流、取放水及机电安装受遮挡或不可见，未直接估算。"
+        }
+      ],
+      "direct_stage_estimates": 17,
+      "stage_slots": 32,
+      "output_rate_pct": 53.125,
+      "weighted_evidence_coverage_mean_pct": 52.5,
+      "direct_estimates_confidence_below_07": 14
+    },
+    "v8": {
+      "periods": [
+        {
+          "date": "2019-06",
+          "total_pct": null,
+          "weighted_evidence_coverage_pct": 0.0,
+          "possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "direct_stage_estimates": 0,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 0,
+          "raw_percent_candidates": 0,
+          "postfilter_rejected_estimates": 0,
+          "dam_body_status": "in_progress",
+          "dam_body_estimate": null,
+          "summary": "2019-06原图显示多级开挖边坡、施工便道与平台、中央偏左填筑/堆石外观、中央偏右混凝土结构及右侧混凝土格栅护坡，并有吊车等施工设备。多数分项仅局部可见且画外范围不明，导流与金属结构机电无直接可见证据，无法可靠估算各项完成百分比。"
+        },
+        {
+          "date": "2020-04",
+          "total_pct": null,
+          "weighted_evidence_coverage_pct": 0.0,
+          "possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "direct_stage_estimates": 0,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 0,
+          "raw_percent_candidates": 0,
+          "postfilter_rejected_estimates": 0,
+          "dam_body_status": "in_progress",
+          "dam_body_estimate": null,
+          "summary": "2020-04 原图可见施工便道与平台、中央偏左阶梯状堆石填筑坡面、中央上部混凝土竖井/塔状结构、中央偏右疑似混凝土槽状结构，以及右侧大面积混凝土格栅护坡；未见可确认的围堰、导流明渠或闸门启闭机。因遮挡、视角限制、画外范围和分项完整边界不明，本期仅记录可见事实，不对分项完成比例作数值估算，也不输出总工程进度。"
+        },
+        {
+          "date": "2021-01",
+          "total_pct": null,
+          "weighted_evidence_coverage_pct": 0.0,
+          "possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "direct_stage_estimates": 0,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 0,
+          "raw_percent_candidates": 0,
+          "postfilter_rejected_estimates": 0,
+          "dam_body_status": "in_progress",
+          "dam_body_estimate": null,
+          "summary": "图3可见中央偏左灰色阶梯状堆石坝填筑面、中央上部混凝土塔状结构、中央偏右疑似混凝土泄槽/控制段，以及右侧大面积混凝土格栅护坡；左中至中央有施工便道、平台和车辆设备。导流设施与机电安装本期不可见，多个分项完整边界受遮挡或延伸至画外，隐蔽处理无法确认，因此不估算分项百分比或总进度。"
+        },
+        {
+          "date": "2022-02",
+          "total_pct": null,
+          "weighted_evidence_coverage_pct": 0.0,
+          "possible_range_pct": [
+            0.0,
+            100.0
+          ],
+          "direct_stage_estimates": 0,
+          "stage_slots": 8,
+          "direct_estimates_confidence_below_07": 0,
+          "raw_percent_candidates": 0,
+          "postfilter_rejected_estimates": 0,
+          "dam_body_status": "in_progress",
+          "dam_body_estimate": null,
+          "summary": "本期图3显示大坝主体为灰色堆石填筑坡面，右侧为混凝土泄槽及护坡结构，坝脚有道路、场地和临时设施；因缺少完整设计范围与工程量参照，且关键部位遮挡、画外和隐蔽工程不可见，各分项仅能定性记录，不输出完成百分比或总工程进度。"
+        }
+      ],
+      "direct_stage_estimates": 0,
+      "stage_slots": 32,
+      "output_rate_pct": 0.0,
+      "weighted_evidence_coverage_mean_pct": 0.0,
+      "direct_estimates_confidence_below_07": 0
+    }
+  },
+  "verified_accuracy_improvement": false,
+  "reason": "No verified per-stage numerical ground truth; V8 produced no numerical estimates.",
+  "milestone_consistency": {
+    "month": "2022-02",
+    "verified_external_milestone": "Embankment completed in January 2022; not whole project completion. Photo month not independently verified.",
+    "v7": "in_progress; 85%, range [75,92]",
+    "v8": "in_progress; no percent",
+    "conclusion": "Neither run identified the embankment-completed endpoint. This single milestone is not a visual percentage ground-truth set.",
+    "sources_file": "aigawa_milestone_sources.json"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "stages": [
+    {
+      "id": "preparation",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.04,
+          0.2,
+          0.8,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    },
+    {
+      "id": "dam_foundation",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.05,
+          0.2,
+          0.79,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    },
+    {
+      "id": "diversion",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.06,
+          0.2,
+          0.78,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    },
+    {
+      "id": "dam_body",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.07,
+          0.2,
+          0.77,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    },
+    {
+      "id": "spillway",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.08,
+          0.2,
+          0.76,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    },
+    {
+      "id": "intake_outlet",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.09,
+          0.2,
+          0.75,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    },
+    {
+      "id": "electromechanical",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.1,
+          0.2,
+          0.74,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    },
+    {
+      "id": "ancillary",
+      "status": "in_progress",
+      "evidence": "离线模拟数据，仅测试文件工作流，不代表照片识别结果。",
+      "confidence": 0.8,
+      "progress_estimate": {
+        "percent": 40,
+        "range_pct": [
+          30,
+          50
+        ],
+        "scope_basis": "测试专用虚构计划范围",
+        "completed_basis": "预设测试百分比，未经现场测量"
+      },
+      "carry_previous": false,
+      "observation": {
+        "image_number": 3,
+        "bbox_xyxy": [
+          0.11,
+          0.2,
+          0.73,
+          0.9
+        ],
+        "visibility": "clear",
+        "scope": "full",
+        "basis": "visible_extent"
+      }
+    }
+  ],
+  "inferred_stages": [],
+  "changes": [],
+  "risks": [
+    "离线模拟数据；所有百分比为人工测试输入。",
+    "证据框和可见性为协议测试字段，不是真实人工标注。"
+  ],
+  "summary": "2021-01 离线模拟响应，非实际识别。"
+}

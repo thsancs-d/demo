@@ -1,0 +1,227 @@
+{
+  "version": "v7",
+  "model": "deepseek-v4-flash",
+  "dataset": "New Niigata Prefecture Ukawa Dam fixed-view sequence",
+  "execution_mode": "live",
+  "output": "/Users/yue/文件夹111/demo-main/output/ukawa_fixed_live_v7_20261126",
+  "periods": [
+    {
+      "date": "2020-04",
+      "project_progress_pct": 24.72,
+      "coverage_pct": 75.0,
+      "range_pct": [
+        8.75,
+        47.75
+      ],
+      "quality_review": null,
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "in_progress",
+          "confidence": 0.55,
+          "progress_estimate": {
+            "percent": 50,
+            "range_pct": [
+              35,
+              65
+            ],
+            "scope_basis": "全部施工便道、场地平整、施工平台及临建设施的计划总量",
+            "completed_basis": "依据可见道路成网程度与已平整场地面积占坝址周边需改造范围的直观比例，估算已完成约一半；剩余为高处道路延伸、场地最终整形及临建收尾，故不给高值"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "dam_foundation",
+          "status": "in_progress",
+          "confidence": 0.5,
+          "progress_estimate": {
+            "percent": 60,
+            "range_pct": [
+              45,
+              75
+            ],
+            "scope_basis": "整个坝基及两岸坝肩的开挖、清基与基础处理计划范围",
+            "completed_basis": "可见开挖轮廓已基本形成坝基形态，左岸台阶削坡覆盖范围大，判定开挖类工作大部分完成；剩余为局部开挖修整、隐蔽灌浆与验收，无法核实，故上限不取高位"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "status": "in_progress",
+          "confidence": 0.35,
+          "progress_estimate": {
+            "percent": 5,
+            "range_pct": [
+              0,
+              10
+            ],
+            "scope_basis": "全坝体堆石填筑至设计断面的计划方量（不以外观坝面面积或高度比例代替体积）",
+            "completed_basis": "仅见零散堆料与局部整平，未见成规模、成层的连续填筑体，判定为极少量起步填筑；剩余为绝大部分坝体方量，故取低位宽区间"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "spillway",
+          "status": "in_progress",
+          "confidence": 0.45,
+          "progress_estimate": {
+            "percent": 30,
+            "range_pct": [
+              15,
+              45
+            ],
+            "scope_basis": "溢洪道进水渠、控制段、泄槽、消能设施及相应混凝土与钢筋制安的全部计划范围",
+            "completed_basis": "可见部分边墙与泄槽底板/阶梯段混凝土已成规模，但仅限局部段落，控制段与消能工、金属结构埋件未见，推断整体结构成型约在二至四成区间"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.25,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "status": "in_progress",
+          "confidence": 0.4,
+          "progress_estimate": {
+            "percent": 12,
+            "range_pct": [
+              5,
+              25
+            ],
+            "scope_basis": "护坡、排水沟、坝顶道路、绿化及场地恢复的全部计划范围",
+            "completed_basis": "仅见随施工推进的临时性排水与局部坡面整理，永久性附属工程基本未展开，按整体范围估算约一成左右"
+          },
+          "source": "current_image"
+        }
+      ]
+    },
+    {
+      "date": "2020-07",
+      "project_progress_pct": 33.04,
+      "coverage_pct": 75.0,
+      "range_pct": [
+        15.3,
+        54.3
+      ],
+      "quality_review": null,
+      "stages": [
+        {
+          "id": "preparation",
+          "status": "in_progress",
+          "confidence": 0.55,
+          "progress_estimate": {
+            "percent": 65,
+            "range_pct": [
+              50,
+              80
+            ],
+            "scope_basis": "全部施工便道、场地平整、施工平台及临建设施的计划总量（同一分母，各期不变）",
+            "completed_basis": "便道网络已基本贯通、主要施工平台与堆场已形成，较基准期明显增加；剩余为局部道路延伸、场地最终整形与临建收尾，按可见成网程度与平整面积占需改造范围的比例估算约六成五。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "dam_foundation",
+          "status": "in_progress",
+          "confidence": 0.5,
+          "progress_estimate": {
+            "percent": 68,
+            "range_pct": [
+              55,
+              80
+            ],
+            "scope_basis": "整个坝基及两岸坝肩的开挖、清基与基础处理计划范围",
+            "completed_basis": "可见开挖面已基本达到坝基形态，两岸削坡覆盖范围大且本期无新增明显开挖面；剩余为局部修整、隐蔽灌浆与验收，因不可见故上限不取高值。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "diversion",
+          "status": "unclear",
+          "confidence": 0.35,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "dam_body",
+          "status": "in_progress",
+          "confidence": 0.6,
+          "progress_estimate": {
+            "percent": 10,
+            "range_pct": [
+              5,
+              18
+            ],
+            "scope_basis": "全坝体堆石填筑至设计断面的计划方量（以体积计，不以坝面可见面积或填筑高度比例代替）",
+            "completed_basis": "可见连续成层填筑体仅位于河床底部及局部岸坡一侧，层数与覆盖面积有限，坝体设计断面的大部分高度与方量尚未形成；据此估算约一成，剩余为绝大部分填筑方量。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "spillway",
+          "status": "in_progress",
+          "confidence": 0.5,
+          "progress_estimate": {
+            "percent": 45,
+            "range_pct": [
+              32,
+              58
+            ],
+            "scope_basis": "溢洪道进水渠、控制段、泄槽、消能设施及相应混凝土与钢筋制安的全部计划范围",
+            "completed_basis": "泄槽段混凝土成型段落已连续、长度可观，但控制段与消能工、金属结构埋件未见完整成型，且部分仓面仍覆盖养护，故整体结构成型估在四成左右，剩余为控制段、消能设施及收尾混凝土。"
+          },
+          "source": "current_image"
+        },
+        {
+          "id": "intake_outlet",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "electromechanical",
+          "status": "unclear",
+          "confidence": 0.3,
+          "progress_estimate": null,
+          "source": "unknown"
+        },
+        {
+          "id": "ancillary",
+          "status": "in_progress",
+          "confidence": 0.4,
+          "progress_estimate": {
+            "percent": 18,
+            "range_pct": [
+              10,
+              28
+            ],
+            "scope_basis": "护坡、排水沟、坝顶道路、绿化及场地恢复的全部计划范围",
+            "completed_basis": "仅左岸部分坡面护坡与随施工推进的临时排水可见，永久性排水、坝顶道路及恢复类工作基本未展开，按整体范围估算不足两成。"
+          },
+          "source": "current_image"
+        }
+      ]
+    }
+  ],
+  "status": "completed",
+  "elapsed_seconds": 147.468
+}

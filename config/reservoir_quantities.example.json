@@ -1,0 +1,61 @@
+{
+  "note": "模拟数据，必须替换为审核后的实际工程量；同一分项多种工程量请先按批准规则归一化。",
+  "items": [
+    {
+      "id": "preparation",
+      "weight": 5,
+      "unit": "项",
+      "planned": 1,
+      "actual": 1
+    },
+    {
+      "id": "dam_foundation",
+      "weight": 10,
+      "unit": "m³",
+      "planned": 10000,
+      "actual": 10000
+    },
+    {
+      "id": "diversion",
+      "weight": 10,
+      "unit": "m³",
+      "planned": 5000,
+      "actual": 4000
+    },
+    {
+      "id": "dam_body",
+      "weight": 40,
+      "unit": "m³",
+      "planned": 200000,
+      "actual": 130000
+    },
+    {
+      "id": "spillway",
+      "weight": 15,
+      "unit": "m³",
+      "planned": 10000,
+      "actual": 4000
+    },
+    {
+      "id": "intake_outlet",
+      "weight": 10,
+      "unit": "m³",
+      "planned": 5000,
+      "actual": 1500
+    },
+    {
+      "id": "electromechanical",
+      "weight": 5,
+      "unit": "套",
+      "planned": 10,
+      "actual": 1
+    },
+    {
+      "id": "ancillary",
+      "weight": 5,
+      "unit": "m²",
+      "planned": 20000,
+      "actual": 4000
+    }
+  ]
+}

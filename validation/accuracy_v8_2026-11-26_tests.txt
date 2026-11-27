@@ -1,0 +1,97 @@
+test_duplicate_labels_and_observation_dates_are_rejected (test_accuracy_evaluation.TrackingEvaluationTests.test_duplicate_labels_and_observation_dates_are_rejected) ... ok
+test_each_observation_must_be_live_current_and_for_the_labeled_photo (test_accuracy_evaluation.TrackingEvaluationTests.test_each_observation_must_be_live_current_and_for_the_labeled_photo) ... ok
+test_empty_or_unverified_legacy_labels_do_not_fabricate_accuracy (test_accuracy_evaluation.TrackingEvaluationTests.test_empty_or_unverified_legacy_labels_do_not_fabricate_accuracy) ... ok
+test_history_cli_writes_metrics_for_verified_live_fixture (test_accuracy_evaluation.TrackingEvaluationTests.test_history_cli_writes_metrics_for_verified_live_fixture) ... ok
+test_invalid_estimates_do_not_bias_metrics (test_accuracy_evaluation.TrackingEvaluationTests.test_invalid_estimates_do_not_bias_metrics) ... ok
+test_invalid_tolerance_rejected (test_accuracy_evaluation.TrackingEvaluationTests.test_invalid_tolerance_rejected) ... ok
+test_metrics_include_abstention_coverage_and_hand_calculated_error (test_accuracy_evaluation.TrackingEvaluationTests.test_metrics_include_abstention_coverage_and_hand_calculated_error) ... ok
+test_missing_period_and_duplicate_stage_count_as_abstention (test_accuracy_evaluation.TrackingEvaluationTests.test_missing_period_and_duplicate_stage_count_as_abstention) ... ok
+test_only_explicitly_verified_labels_with_sources_and_matching_metric (test_accuracy_evaluation.TrackingEvaluationTests.test_only_explicitly_verified_labels_with_sources_and_matching_metric) ... ok
+test_simulated_or_other_project_data_never_produces_metrics (test_accuracy_evaluation.TrackingEvaluationTests.test_simulated_or_other_project_data_never_produces_metrics) ... ok
+test_baseline_and_previous_and_all_totals (test_cumulative_v7.CumulativeV7Tests.test_baseline_and_previous_and_all_totals) ... ok
+test_decline_allowed (test_cumulative_v7.CumulativeV7Tests.test_decline_allowed) ... ok
+test_no_current_answer_or_future_labels (test_cumulative_v7.CumulativeV7Tests.test_no_current_answer_or_future_labels) ... ok
+test_roles_and_dedup (test_cumulative_v7.CumulativeV7Tests.test_roles_and_dedup) ... ok
+test_v6_migration_keeps_weighted_inference (test_cumulative_v7.CumulativeV7Tests.test_v6_migration_keeps_weighted_inference) ... ok
+test_cv_and_cli (test_integration.TestIntegration.test_cv_and_cli) ... ok
+test_hidden (test_integration.TestIntegration.test_hidden) ... ok
+test_missing_and_duplicates (test_integration.TestIntegration.test_missing_and_duplicates) ... ok
+test_profiles (test_integration.TestIntegration.test_profiles) ... ok
+test_prompt (test_integration.TestIntegration.test_prompt) ... ok
+test_quantities (test_integration.TestIntegration.test_quantities) ... ok
+test_report (test_integration.TestIntegration.test_report) ... ok
+test_roi (test_integration.TestIntegration.test_roi) ... ok
+test_score (test_integration.TestIntegration.test_score) ... ok
+test_summarize (test_integration.TestIntegration.test_summarize) ... ok
+test_all_unknown (test_progress_tracker.TrackerTests.test_all_unknown) ... ok
+test_carry_is_not_current (test_progress_tracker.TrackerTests.test_carry_is_not_current) ... ok
+test_dates (test_progress_tracker.TrackerTests.test_dates) ... ok
+test_no_forced_growth (test_progress_tracker.TrackerTests.test_no_forced_growth) ... ok
+test_prompt_first_and_update (test_progress_tracker.TrackerTests.test_prompt_first_and_update) ... ok
+test_total_all (test_progress_tracker.TrackerTests.test_total_all) ... ok
+test_unknown_not_zero (test_progress_tracker.TrackerTests.test_unknown_not_zero) ... ok
+test_bad_model_rejected (test_project_estimate.OverallTests.test_bad_model_rejected) ... ok
+test_full_coverage (test_project_estimate.OverallTests.test_full_coverage) ... ok
+test_inadequate_coverage (test_project_estimate.OverallTests.test_inadequate_coverage) ... ok
+test_migrate_delta (test_project_estimate.OverallTests.test_migrate_delta) ... ok
+test_model_overall (test_project_estimate.OverallTests.test_model_overall) ... ok
+test_partial_coverage_extrapolation (test_project_estimate.OverallTests.test_partial_coverage_extrapolation) ... ok
+test_legacy_history_unchanged (test_prompt_v6.PromptV6Tests.test_legacy_history_unchanged) ... ok
+test_low_coverage (test_prompt_v6.PromptV6Tests.test_low_coverage) ... ok
+test_partial_inference_fallback (test_prompt_v6.PromptV6Tests.test_partial_inference_fallback) ... ok
+test_prompt_prior_total_explicit_reference (test_prompt_v6.PromptV6Tests.test_prompt_prior_total_explicit_reference) ... ok
+test_reject_invalid_and_visible_duplicates (test_prompt_v6.PromptV6Tests.test_reject_invalid_and_visible_duplicates) ... ok
+test_weighted_inferred (test_prompt_v6.PromptV6Tests.test_weighted_inferred) ... ok
+test_low_confidence_percentages_do_not_enter_new_history (test_recognition_quality.AccuracyWorkflowTests.test_low_confidence_percentages_do_not_enter_new_history) ... ok
+test_false_precision_and_duplicate_stages_cannot_pass_review (test_recognition_quality.EvidenceFilterTests.test_false_precision_and_duplicate_stages_cannot_pass_review) ... ok
+test_history_retains_evidence_but_does_not_anchor_numeric_estimates (test_recognition_quality.EvidenceFilterTests.test_history_retains_evidence_but_does_not_anchor_numeric_estimates) ... ok
+test_invalid_or_low_confidence_is_rejected (test_recognition_quality.EvidenceFilterTests.test_invalid_or_low_confidence_is_rejected) ... ok
+test_local_or_unseen_scope_and_wrong_measurement_basis_are_rejected (test_recognition_quality.EvidenceFilterTests.test_local_or_unseen_scope_and_wrong_measurement_basis_are_rejected) ... ok
+test_missing_or_invalid_boxes_are_rejected (test_recognition_quality.EvidenceFilterTests.test_missing_or_invalid_boxes_are_rejected) ... ok
+test_same_method_name_still_marks_policy_transition (test_recognition_quality.EvidenceFilterTests.test_same_method_name_still_marks_policy_transition) ... ok
+test_v8_withholds_total_for_missing_stages_and_legacy_keeps_extrapolation (test_recognition_quality.EvidenceFilterTests.test_v8_withholds_total_for_missing_stages_and_legacy_keeps_extrapolation) ... ok
+test_valid_evidence_is_preserved_without_mutating_response (test_recognition_quality.EvidenceFilterTests.test_valid_evidence_is_preserved_without_mutating_response) ... ok
+test_wrong_image_including_boolean_cannot_be_current_evidence (test_recognition_quality.EvidenceFilterTests.test_wrong_image_including_boolean_cannot_be_current_evidence) ... ok
+test_affine_and_change (test_registration.TestRegistration.test_affine_and_change) ... ok
+test_degenerate_rejected (test_registration.TestRegistration.test_degenerate_rejected) ... ok
+test_insufficient_features_preserves_each_method_diagnostic (test_registration.TestRegistration.test_insufficient_features_preserves_each_method_diagnostic) ... ok
+test_manual_independent_check (test_registration.TestRegistration.test_manual_independent_check) ... ok
+test_real_pair_safe_fallback (test_registration.TestRegistration.test_real_pair_safe_fallback) ... ok
+test_sift_features_reused_only_within_registration (test_registration.TestRegistration.test_sift_features_reused_only_within_registration) ... ok
+test_unavailable_sift_preserves_diagnostics_and_akaze_fallback (test_registration.TestRegistration.test_unavailable_sift_preserves_diagnostics_and_akaze_fallback) ... ok
+test_unrelated_rejected (test_registration.TestRegistration.test_unrelated_rejected) ... ok
+test_digest_streams_large_files (test_tracking_workflow.StorageTests.test_digest_streams_large_files) ... ok
+test_failed_replace_preserves_existing_file_and_cleans_temp (test_tracking_workflow.StorageTests.test_failed_replace_preserves_existing_file_and_cleans_temp) ... ok
+test_failed_serialization_preserves_existing_file_and_cleans_temp (test_tracking_workflow.StorageTests.test_failed_serialization_preserves_existing_file_and_cleans_temp) ... ok
+test_default_help_exposes_tracking_and_pairwise_modes (test_tracking_workflow.TrackingWorkflowTests.test_default_help_exposes_tracking_and_pairwise_modes) ... ok
+test_equals_form_routes_new_image_to_tracking (test_tracking_workflow.TrackingWorkflowTests.test_equals_form_routes_new_image_to_tracking) ... ok
+test_four_periods_audit_resume_and_refresh_with_real_cv (test_tracking_workflow.TrackingWorkflowTests.test_four_periods_audit_resume_and_refresh_with_real_cv) ... ok
+test_modified_baseline_blocks_append_and_preserves_history (test_tracking_workflow.TrackingWorkflowTests.test_modified_baseline_blocks_append_and_preserves_history) ... ok
+test_new_live_observation_cannot_mix_with_offline_history (test_tracking_workflow.TrackingWorkflowTests.test_new_live_observation_cannot_mix_with_offline_history) ... ok
+test_offline_refresh_inherits_saved_mode_without_response_files (test_tracking_workflow.TrackingWorkflowTests.test_offline_refresh_inherits_saved_mode_without_response_files) ... ok
+test_all_estimated (test_visual_phase.V3.test_all_estimated) ... ok
+test_context (test_visual_phase.V3.test_context) ... ok
+test_duplicate (test_visual_phase.V3.test_duplicate) ... ok
+test_evaluate (test_visual_phase.V3.test_evaluate) ... ok
+test_hidden (test_visual_phase.V3.test_hidden) ... ok
+test_invalid (test_visual_phase.V3.test_invalid) ... ok
+test_no_fixed_stage_conversion (test_visual_phase.V3.test_no_fixed_stage_conversion) ... ok
+test_percentage (test_visual_phase.V3.test_percentage) ... ok
+test_replay (test_visual_phase.V3.test_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 80 tests in 7.530s
+
+OK
+# 水库多期施工进度（影像估算）
+
+| 日期区间 | 大坝前期 | 大坝后期 | 后期全工程估计 | 全工程可能范围 | 可估算分项加权进度 | 覆盖权重 |
+|---|---|---|---|---|---|---|
+| 2019-06 → 2020-04 | 20%（10%–30%） | 70%（60%–80%） | 无法估算 | 24%–92% | 70% | 40/100 |
+
+## 分项百分比（后期）
+| 日期 | 施工准备与临时道路 | 坝基开挖及处理 | 导流与围堰 | 大坝主体 | 溢洪道 | 取放水建筑物 | 金属结构及机电安装 | 护坡排水及附属工程 |
+|---|---|---|---|---|---|---|---|---|
+| 2020-04 | 无法估算 | 无法估算 | 无法估算 | 70%（60%–80%） | 无法估算 | 无法估算 | 无法估算 | 无法估算 |
+
+不同期的覆盖范围可能不同。影像估算不等于真实工程量。重复出现的同一日期可能具有不同估算值，不强制单调上升。
